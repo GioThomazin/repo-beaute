@@ -116,13 +116,15 @@
     --color-1-50                  : #f4f9f7;
     --color-1-100                 : #daede5;
     --color-1-200                 : #b5dacb;
-    --color-1-300                 : #89bfac;
-    --color-1-400                 : #65a48f;
-    --color-1-500                 : #468672;
-    --color-1-600                 : #366b5b;
-    --color-1-700                 : #2e574a;
-    --color-1-800                 : #29463f;
-    --color-1-900                 : #253c35;
+    --color-1-300                 : #1E1E8C;
+    --color-1-400                 : #1E1E8C;
+    --color-1-500                 : #000011;
+;
+    --color-1-600                 : #1E1E8C;
+;
+    --color-1-700                 : #1E1E8C;
+    --color-1-800                 : #1E1E8C;
+    --color-1-900                 : #1E1E8C;
     --color-1-950                 : #11221d;
     --color-1                     : var(--color-1-500);
 
@@ -147,8 +149,8 @@
     --color-neutral-50            : #efefef;
     --color-neutral-100           : #dfe0e0;
     --color-neutral-150           : #cfd0d0;
-    --color-neutral-200           : #bfc1c0;
-    --color-neutral-250           : #afb1b1;
+    --color-neutral-200           : #C6A664;
+    --color-neutral-250           : #C6A664;
     --color-neutral-300           : #9fa1a1;
     --color-neutral-350           : #8f9291;
     --color-neutral-400           : #7f8281;
@@ -161,7 +163,7 @@
     --color-neutral-750           : #303231;
     --color-neutral-800           : #262827;
     --color-neutral-850           : #1c1e1d;
-    --color-neutral-900           : #131414;
+    --color-neutral-900           : #C6A664;
     --color-neutral-950           : #090a0a;
     --color-neutral               : var(--color-neutral-500);
 
@@ -671,7 +673,31 @@ table {
     margin-inline : auto;
     padding-inline: calc(var(--gutter) * 2);
 }
+.lista-beneficios {
+    list-style: none;
+    padding-left: 0;
+    margin: 15px 0;
+}
 
+.lista-beneficios li {
+    margin-bottom: 10px;
+    padding-left: 25px;
+    position: relative;
+    line-height: 1.4;
+}
+
+.lista-beneficios li:before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #FF5A8A; /* Cor personalizável */
+}
+
+.destaque {
+    font-style: italic;
+    margin-top: 15px;
+    color: #555;
+}
 .row {
     display      : flex;
     flex-flow    : row wrap;
@@ -1512,7 +1538,7 @@ body {
 /* links
  */
 a {
-    color     : var(--color-link);
+    color     : var(--color-white);
     transition: all 0.3s var(--ease-snappy-polished);
 }
 
@@ -3324,11 +3350,11 @@ td:last-child {
 
 .header-nav__links a:focus,
 .header-nav__links a:hover {
-    color: var(--color-text);
+        background-color: #1E1E8C;
 }
 
 .header-nav__links .current a {
-    color: var(--color-white);
+    color: var(--color-);
 }
 
 /* header contact num
@@ -4034,6 +4060,14 @@ td:last-child {
     object-fit        : cover;
     -o-object-position: center;
     object-position   : center;
+    aspect-ratio      : 2000/2900;
+}.about-pic-secundary img {
+    padding           : 0;
+    margin            : 0;
+    -o-object-fit     : cover;
+    object-fit        : cover;
+    -o-object-position: center;
+    object-position   : center;
     aspect-ratio      : 2000/2000;
 }
 
@@ -4126,7 +4160,7 @@ td:last-child {
 
 .tab-nav__list li[data-tab-active] a {
     background-color: var(--color-bg-accent);
-    color           : var(--color-white);
+        background-color: #1E1E8C;
 }
 
 .tab-nav__list li[data-tab-active] a::before {
@@ -4147,7 +4181,7 @@ td:last-child {
     display       : flex;
     align-items   : center;
     height        : 100%;
-    color         : var(--color-text);
+            background-color: #000;
     padding-top   : var(--vspace-0_75);
     padding-bottom: var(--vspace-0_75);
     padding-left  : var(--vspace-0_75);
@@ -4181,8 +4215,8 @@ td:last-child {
 
 .tab-nav__list a:hover,
 .tab-nav__list a:focus {
-    background-color: var(--color-neutral-900);
-    color           : var(--color-text);
+    background-color: #000;
+    background-color: #1E1E8C;
 }
 
 .tab-nav__list a:hover svg,
@@ -4398,6 +4432,12 @@ td:last-child {
 .gallery-items__item {
     margin-bottom: 0;
     position: relative;
+}
+.gallery-caption {
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+    margin-top: 8px;
 }
 
 .gallery-items__item::after {
@@ -4949,7 +4989,8 @@ td:last-child {
     height         : var(--vspace-1_75);
     width          : var(--vspace-1_75);
     border-radius  : 50%;
-    border         : 1px solid var(--color-white);
+    border         : 1px solid;
+    background-color: #1E1E8C;
     margin-right   : var(--vspace-0_75);
     position       : relative;
 }

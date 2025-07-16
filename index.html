@@ -69,29 +69,11 @@
                         <li><a class="smoothscroll" href="#gallery">Portifólio</a></li>
                         <li><a class="smoothscroll" href="#cursos">Cursos</a></li>
                         <li><a class="smoothscroll" href="#about">Sobre Nós</a></li>
+                        <li><a class="smoothscroll" href="#localização">Contato</a></li>
 
                     </ul> <!-- end header-nav__links -->
 
-                    <div class="header-contact">
-                        <a href="tel:+" class="header-contact__num btn">
-                            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                stroke-width="1.5" width="24" height="24" color="#000000">
-                                <defs>
-                                    <style>
-                                        .cls-6376396cc3a86d32eae6f0dc-1 {
-                                            fill: none;
-                                            stroke: currentColor;
-                                            stroke-miterlimit: 10;
-                                        }
-                                    </style>
-                                </defs>
-                                <path class="cls-6376396cc3a86d32eae6f0dc-1"
-                                    d="M19.64,21.25c-2.54,2.55-8.38.83-13-3.84S.2,6.9,2.75,4.36L5.53,1.57,10.9,6.94l-2,2A2.18,2.18,0,0,0,8.9,12L12,15.1a2.18,2.18,0,0,0,3.07,0l2-2,5.37,5.37Z">
-                                </path>
-                            </svg>
-                            555-123-3456
-                        </a>
-                    </div> <!-- end header-contact -->
+                   
                 </nav> <!-- end header-nav -->
 
             </div> <!-- end s-header__content -->
@@ -107,7 +89,7 @@
 
                 <div class="intro-header">
                     <div class="intro-header__overline">Bem vinda à</div><br>
-                    <figure class="about-pic-primary">
+                    <figure class="about-pic-secundary">
                         <img src="images/team3.jpeg" srcset="images/logo2.PNG 1x, images/logo2.PNG 2x"
                             alt="Juliana Costa">
                     </figure>
@@ -134,7 +116,6 @@
 
                 <div class="intro-scroll">
                     <a class="smoothscroll" href="#about">
-                        <span class="intro-scroll__circle-text"></span>
                         <span class="intro-scroll__text u-screen-reader-text">Descer</span>
                         <div class="intro-scroll__icon">
                             <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"
@@ -157,251 +138,21 @@
         <!-- # about
 ================================================== -->
 
-<section id="agendar" class="container s-menu target-section">
-
-    <div class="row s-menu__content">
-
-        <div class="column xl-4 lg-5 md-12 s-menu__content-start">
-
-            <div class="section-header" data-num="03">
-                <h2 class="text-display-title">Agendar Serviço</h2>
-            </div>
-
-            <nav class="tab-nav">
-                <ul class="tab-nav__list">
-                    <li class="active">
-                        <a href="#tab-agendamento">
-                            <span>Preencher Formulário</span>
-                            <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round"
-                                stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="m14.523 18.787s4.501-4.505 6.255-6.26c.146-.146.219-.338.219-.53s-.073-.383-.219-.53c-1.753-1.754-6.255-6.258-6.255-6.258-.144-.145-.334-.217-.524-.217-.193 0-.385.074-.532.221-.293.292-.295.766-.004 1.056l4.978 4.978h-14.692c-.414 0-.75.336-.75.75s.336.75.75.75h14.692l-4.979 4.979c-.289.289-.286.762.006 1.054.148.148.341.222.533.222.19 0 .378-.072.522-.215z"
-                                    fill-rule="nonzero" />
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#tab-whatsapp">
-                            <span>Agendar Direto pelo WhatsApp</span>
-                            <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round"
-                                stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="m14.523 18.787s4.501-4.505 6.255-6.26c.146-.146.219-.338.219-.53s-.073-.383-.219-.53c-1.753-1.754-6.255-6.258-6.255-6.258-.144-.145-.334-.217-.524-.217-.193 0-.385.074-.532.221-.293.292-.295.766-.004 1.056l4.978 4.978h-14.692c-.414 0-.75.336-.75.75s.336.75.75.75h14.692l-4.979 4.979c-.289.289-.286.762.006 1.054.148.148.341.222.533.222.19 0 .378-.072.522-.215z"
-                                    fill-rule="nonzero" />
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </nav> <!-- end tab-nav -->
-
-        </div> <!-- end s-menu__content-start -->
-
-        <div class="column xl-6 lg-6 md-12 s-menu__content-end">
-
-            <div class="tab-content menu-block">
-
-                <div id="tab-agendamento" class="menu-block__group tab-content__item active">
-
-                    <h6 class="menu-block__cat-name">
-                        Informações para Agendamento
-                    </h6>
-
-                    <form id="schedule-form" class="schedule-form">
-                        <div class="form-group">
-                            <input type="text" id="client-name" name="name" placeholder="Seu Nome Completo" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="date" id="preferred-date" name="date" required>
-                        </div>
-
-                        <div class="form-group">
-                            <input type="time" id="preferred-time" name="time" required>
-                        </div>
-
-                        <div class="form-group">
-                            <select id="service-type" name="service" required>
-                                <option value="" disabled selected>Selecione o Serviço</option>
-                                <option value="Alongamento">Alongamento</option>
-                                <option value="Manutenção de Alongamento">Manutenção de Alongamento</option>
-                                <option value="Banho de Gel">Banho de Gel</option>
-                                <option value="Manutenção de Banho de Gel">Manutenção de Banho de Gel</option>
-                                <option value="Blindagem">Blindagem</option>
-                                <option value="Manutenção da Blindagem">Manutenção da Blindagem</option>
-                                <option value="Esmaltação em Gel">Esmaltação em Gel</option>
-                                <option value="Outros Serviços">Outros Serviços</option>
-                            </select>
-                        </div>
-
-                        <button type="button" id="whatsapp-submit" class="btn btn--primary">
-                            <svg width="24" height="24" viewBox="0 0 24 24"
-                                style="margin-right: 10px; vertical-align: middle;">
-                                <path fill="currentColor"
-                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-6.29-12.21c-5.297 0-9.588 4.312-9.588 9.624 0 5.313 4.291 9.625 9.588 9.625 5.296 0 9.587-4.312 9.587-9.625 0-5.312-4.291-9.624-9.587-9.624zm0 17.77c-4.491 0-8.133-3.656-8.133-8.146 0-4.492 3.642-8.147 8.133-8.147 4.49 0 8.132 3.655 8.132 8.147 0 4.49-3.642 8.145-8.132 8.145z" />
-                            </svg>
-                            Enviar Agendamento
-                        </button>
-                    </form>
-
-                </div> <!-- end tab-content__item -->
-
-                <div id="tab-whatsapp" class="menu-block__group tab-content__item">
-
-                    <h6 class="menu-block__cat-name">
-                        Agendamento Direto
-                    </h6>
-
-                    <div class="whatsapp-direct">
-                        <p>Clique no botão abaixo para conversar diretamente pelo WhatsApp e agendar seu horário:</p>
-                        
-                        <a href="https://api.whatsapp.com/message/7FA5BSNMQNOEB1?autoload=1&app_absent=0" class="btn btn--whatsapp" target="_blank">
-                            <svg width="24" height="24" viewBox="0 0 24 24" style="margin-right: 10px; vertical-align: middle;">
-                                <path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-6.29-12.21c-5.297 0-9.588 4.312-9.588 9.624 0 5.313 4.291 9.625 9.588 9.625 5.296 0 9.587-4.312 9.587-9.625 0-5.312-4.291-9.624-9.587-9.624zm0 17.77c-4.491 0-8.133-3.656-8.133-8.146 0-4.492 3.642-8.147 8.133-8.147 4.49 0 8.132 3.655 8.132 8.147 0 4.49-3.642 8.145-8.132 8.145z"/>
-                            </svg>
-                            Abrir WhatsApp
-                        </a>
-                    </div>
-
-                </div> <!-- end tab-content__item -->
-
-            </div> <!-- menu-block -->
-
-        </div> <!-- end s-menu__content-end -->
-
-    </div> <!-- end s-menu__content -->
-
-</section> <!-- end s-menu -->
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    // WhatsApp Form Submission
-    const whatsappBtn = document.getElementById('whatsapp-submit');
-    
-    whatsappBtn.addEventListener('click', function() {
-        const name = document.getElementById('client-name').value;
-        const date = document.getElementById('preferred-date').value;
-        const time = document.getElementById('preferred-time').value;
-        const service = document.getElementById('service-type').value;
-        
-        if(!name || !date || !time || !service) {
-            alert('Por favor, preencha todos os campos antes de enviar.');
-            return;
-        }
-        
-        // Format date to dd/mm/yyyy
-        const formattedDate = date.split('-').reverse().join('/');
-        
-        // Create formatted message
-        const message = `*AGENDAMENTO*%0A%0A👤 *Nome:* ${name}%0A📅 *Data:* ${formattedDate}%0A⏰ *Horário:* ${time}%0A💅 *Serviço:* ${service}%0A%0APor favor, confirme a disponibilidade. Obrigada!`;
-        
-        // Your WhatsApp deep link with formatted message
-        const whatsappUrl = `https://api.whatsapp.com/message/7FA5BSNMQNOEB1?autoload=1&app_absent=0&text=${message}`;
-        
-        window.open(whatsappUrl, '_blank');
-    });
-
-    // Tab Navigation
-    const tabLinks = document.querySelectorAll('.tab-nav__list a');
-    
-    tabLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
-            
-            // Remove active class from all tabs
-            document.querySelectorAll('.tab-nav__list li').forEach(item => {
-                item.classList.remove('active');
-            });
-            
-            // Add active class to clicked tab
-            this.parentElement.classList.add('active');
-            
-            // Hide all tab content
-            document.querySelectorAll('.tab-content__item').forEach(item => {
-                item.classList.remove('active');
-            });
-            
-            // Show selected tab content
-            const tabId = this.getAttribute('href');
-            document.querySelector(tabId).classList.add('active');
-        });
-    });
-});
-</script>
-
-<style>
-/* WhatsApp Button Styles */
-.btn--whatsapp {
-    background: #25D366;
-    color: white;
-    display: inline-flex;
-    align-items: center;
-    padding: 12px 24px;
-    border-radius: 4px;
-    text-decoration: none;
-    font-weight: 500;
-    transition: background 0.3s ease;
-}
-
-.btn--whatsapp:hover {
-    background: #128C7E;
-    color: white;
-}
-
-/* Form Styles */
-.schedule-form .form-group {
-    margin-bottom: 1.5rem;
-}
-
-.schedule-form input,
-.schedule-form select {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 1rem;
-}
-
-/* Tab Content */
-.tab-content__item {
-    display: none;
-}
-
-.tab-content__item.active {
-    display: block;
-}
-
-/* Active Tab Indicator */
-.tab-nav__list li.active a {
-    font-weight: bold;
-    color: #000;
-}
-
-.whatsapp-direct {
-    text-align: center;
-    padding: 2rem 0;
-}
-
-.whatsapp-direct p {
-    margin-bottom: 1.5rem;
-    color: #555;
-}
-</style>
-     
-        ================================================== -->
-        <section id="menu" class="container s-menu target-section">
+        <section id="agendar" class="container s-menu target-section">
 
             <div class="row s-menu__content">
 
                 <div class="column xl-4 lg-5 md-12 s-menu__content-start">
 
-                    <div class="section-header" data-num="02">
-                        <h2 class="text-display-title">Tabela de Valores</h2>
+                    <div class="section-header" data-num="01">
+                        <h2 class="text-display-title">Agendar Serviço</h2>
                     </div>
 
                     <nav class="tab-nav">
                         <ul class="tab-nav__list">
-                            <li>
-                                <a href="tab-signature-blends">
-                                    <span>Alongamento</span>
+                            <li class="active">
+                                <a href="#tab-agendamento">
+                                    <span>Preencher Formulário</span>
                                     <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round"
                                         stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -411,80 +162,8 @@ document.addEventListener('DOMContentLoaded', function() {
                                 </a>
                             </li>
                             <li>
-                                <a href="#tab-pastries">
-                                    <span>Manutenção de Alongamento</span>
-                                    <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round"
-                                        stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="m14.523 18.787s4.501-4.505 6.255-6.26c.146-.146.219-.338.219-.53s-.073-.383-.219-.53c-1.753-1.754-6.255-6.258-6.255-6.258-.144-.145-.334-.217-.524-.217-.193 0-.385.074-.532.221-.293.292-.295.766-.004 1.056l4.978 4.978h-14.692c-.414 0-.75.336-.75.75s.336.75.75.75h14.692l-4.979 4.979c-.289.289-.286.762.006 1.054.148.148.341.222.533.222.19 0 .378-.072.522-.215z"
-                                            fill-rule="nonzero" />
-                                    </svg>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#tab-pastries">
-                                    <span>Banho de Gel
-                                    </span>
-                                    <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round"
-                                        stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="m14.523 18.787s4.501-4.505 6.255-6.26c.146-.146.219-.338.219-.53s-.073-.383-.219-.53c-1.753-1.754-6.255-6.258-6.255-6.258-.144-.145-.334-.217-.524-.217-.193 0-.385.074-.532.221-.293.292-.295.766-.004 1.056l4.978 4.978h-14.692c-.414 0-.75.336-.75.75s.336.75.75.75h14.692l-4.979 4.979c-.289.289-.286.762.006 1.054.148.148.341.222.533.222.19 0 .378-.072.522-.215z"
-                                            fill-rule="nonzero" />
-                                    </svg>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#tab-pastries">
-                                    <span>Manutenção de Banho de Gel
-                                    </span>
-                                    <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round"
-                                        stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="m14.523 18.787s4.501-4.505 6.255-6.26c.146-.146.219-.338.219-.53s-.073-.383-.219-.53c-1.753-1.754-6.255-6.258-6.255-6.258-.144-.145-.334-.217-.524-.217-.193 0-.385.074-.532.221-.293.292-.295.766-.004 1.056l4.978 4.978h-14.692c-.414 0-.75.336-.75.75s.336.75.75.75h14.692l-4.979 4.979c-.289.289-.286.762.006 1.054.148.148.341.222.533.222.19 0 .378-.072.522-.215z"
-                                            fill-rule="nonzero" />
-                                    </svg>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#tab-pastries">
-                                    <span>Blindagem
-                                    </span>
-                                    <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round"
-                                        stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="m14.523 18.787s4.501-4.505 6.255-6.26c.146-.146.219-.338.219-.53s-.073-.383-.219-.53c-1.753-1.754-6.255-6.258-6.255-6.258-.144-.145-.334-.217-.524-.217-.193 0-.385.074-.532.221-.293.292-.295.766-.004 1.056l4.978 4.978h-14.692c-.414 0-.75.336-.75.75s.336.75.75.75h14.692l-4.979 4.979c-.289.289-.286.762.006 1.054.148.148.341.222.533.222.19 0 .378-.072.522-.215z"
-                                            fill-rule="nonzero" />
-                                    </svg>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#tab-pastries">
-                                    <span>Manutenção da Blindagem
-                                    </span>
-                                    <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round"
-                                        stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="m14.523 18.787s4.501-4.505 6.255-6.26c.146-.146.219-.338.219-.53s-.073-.383-.219-.53c-1.753-1.754-6.255-6.258-6.255-6.258-.144-.145-.334-.217-.524-.217-.193 0-.385.074-.532.221-.293.292-.295.766-.004 1.056l4.978 4.978h-14.692c-.414 0-.75.336-.75.75s.336.75.75.75h14.692l-4.979 4.979c-.289.289-.286.762.006 1.054.148.148.341.222.533.222.19 0 .378-.072.522-.215z"
-                                            fill-rule="nonzero" />
-                                    </svg>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#tab-pastries">
-                                    <span>Esmaltação em Gel
-                                        (UNHAS NATURAIS)
-                                    </span>
-                                    <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round"
-                                        stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="m14.523 18.787s4.501-4.505 6.255-6.26c.146-.146.219-.338.219-.53s-.073-.383-.219-.53c-1.753-1.754-6.255-6.258-6.255-6.258-.144-.145-.334-.217-.524-.217-.193 0-.385.074-.532.221-.293.292-.295.766-.004 1.056l4.978 4.978h-14.692c-.414 0-.75.336-.75.75s.336.75.75.75h14.692l-4.979 4.979c-.289.289-.286.762.006 1.054.148.148.341.222.533.222.19 0 .378-.072.522-.215z"
-                                            fill-rule="nonzero" />
-                                    </svg>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#tab-gourmet-treats">
-                                    <span>Outros Serviços</span>
+                                <a href="#tab-whatsapp">
+                                    <span>Agendar Direto pelo WhatsApp</span>
                                     <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round"
                                         stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -502,462 +181,73 @@ document.addEventListener('DOMContentLoaded', function() {
 
                     <div class="tab-content menu-block">
 
-                        <div id="tab-signature-blends" class="menu-block__group tab-content__item">
+                        <div id="tab-agendamento" class="menu-block__group tab-content__item active">
 
                             <h6 class="menu-block__cat-name">
-                                Alongamento
+                                Informações para Agendamento
                             </h6>
 
-                            <ul class="menu-list">
-                                <li class="menu-list__item">
-                                    <div class="menu-list__item-desc">
-                                        <h4>Aplicação natural</h4>
-                                        <p>
-                                            falar sobre
-                                        </p>
-                                    </div>
-                                    <div class="menu-list__item-price">
-                                        <span>R$</span>160,0O
-                                    </div>
-                                </li>
-                                <li class="menu-list__item">
-                                    <div class="menu-list__item-desc">
-                                        <h4>Aplicação + cuticula e
-                                            esmaltação em gel simples</h4>
-                                        <p>
-                                            falar sobre
-                                        </p>
-                                    </div>
-                                    <div class="menu-list__item-price">
-                                        <span>R$</span>200,00
-                                    </div>
-                                </li>
-                                <li class="menu-list__item">
-                                    <div class="menu-list__item-desc">
-                                        <h4>Aplicação + cuticula e
-                                            decoração permanente
-                                        </h4>
-                                        <p>
-                                            falar sobre </p>
-                                    </div>
-                                    <div class="menu-list__item-price">
-                                        <span>R$</span>220.00
+                            <form id="schedule-form" class="schedule-form">
+                                <div class="form-group">
+                                    <input type="text" id="client-name" name="name" placeholder="Seu Nome Completo"
+                                        required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="date" id="preferred-date" name="date" required>
+                                </div>
 
-                                    </div>
-                                </li>
-                            </ul> <!-- end menu-list -->
+                                <div class="form-group">
+                                    <input type="time" id="preferred-time" name="time" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <select id="service-type" name="service" required>
+                                        <option value="" disabled selected>Selecione o Serviço</option>
+                                        <option value="Alongamento">Alongamento</option>
+                                        <option value="Manutenção de Alongamento">Manutenção de Alongamento</option>
+                                        <option value="Banho de Gel">Banho de Gel</option>
+                                        <option value="Manutenção de Banho de Gel">Manutenção de Banho de Gel</option>
+                                        <option value="Blindagem">Blindagem</option>
+                                        <option value="Manutenção da Blindagem">Manutenção da Blindagem</option>
+                                        <option value="Esmaltação em Gel">Esmaltação em Gel</option>
+                                        <option value="Outros Serviços">Outros Serviços</option>
+                                    </select>
+                                </div>
+
+                                <button type="button" id="whatsapp-submit" class="btn btn--primary">
+                                    <svg width="24" height="24" viewBox="0 0 24 24"
+                                        style="margin-right: 10px; vertical-align: middle;">
+                                        <path fill="currentColor"
+                                            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-6.29-12.21c-5.297 0-9.588 4.312-9.588 9.624 0 5.313 4.291 9.625 9.588 9.625 5.296 0 9.587-4.312 9.587-9.625 0-5.312-4.291-9.624-9.587-9.624zm0 17.77c-4.491 0-8.133-3.656-8.133-8.146 0-4.492 3.642-8.147 8.133-8.147 4.49 0 8.132 3.655 8.132 8.147 0 4.49-3.642 8.145-8.132 8.145z" />
+                                    </svg>
+                                    Enviar Agendamento
+                                </button>
+                            </form>
 
                         </div> <!-- end tab-content__item -->
 
-
-                        <div id="tab-pastries" class="menu-block__group tab-content__item">
-
-                            <h6 class="menu-block__cat-name">
-                                Manutenção do Alongamento
-                            </h6>
-
-                            <ul class="menu-list">
-                                <li class="menu-list__item">
-                                    <div class="menu-list__item-desc">
-                                        <h4>Manutenção natural</h4>
-                                        <p>
-                                            Falar sobre
-                                        </p>
-                                    </div>
-                                    <div class="menu-list__item-price">
-                                        <span>R$</span>110,00
-                                    </div>
-                                </li>
-                                <li class="menu-list__item">
-                                    <div class="menu-list__item-desc">
-                                        <h4>Manutenção + cuticula e
-                                            esmaltação em gel simples</h4>
-                                        <p>
-                                            falar sobre
-                                        </p>
-                                    </div>
-                                    <div class="menu-list__item-price">
-                                        <span>R$</span>150,00
-                                    </div>
-                                </li>
-                                <li class="menu-list__item">
-                                    <div class="menu-list__item-desc">
-                                        <h4>Manutenção + cuticula e
-                                            decoração permanente</h4>
-                                        <p>
-                                            falar sobre
-                                        </p>
-                                    </div>
-                                    <div class="menu-list__item-price">
-                                        <span>R$</span>170,0O
-                                    </div>
-                            </ul> <!-- end menu-list -->
-                        </div> <!-- end tab-content__item -->
-
-
-                        <div id="tab-pastries" class="menu-block__group tab-content__item">
+                        <div id="tab-whatsapp" class="menu-block__group tab-content__item">
 
                             <h6 class="menu-block__cat-name">
-                                Banho de Gel
+                                Agendamento Direto
                             </h6>
 
-                            <ul class="menu-list">
-                                <li class="menu-list__item">
-                                    <div class="menu-list__item-desc">
-                                        <h4>Aplicação natural</h4>
-                                        <p>
-                                            Falar sobre
-                                        </p>
-                                    </div>
-                                    <div class="menu-list__item-price">
-                                        <span>R$</span>150,00
-                                    </div>
-                                </li>
-                                <li class="menu-list__item">
-                                    <div class="menu-list__item-desc">
-                                        <h4>Aplicação + cuticula e
-                                            esmaltação em gel simples</h4>
-                                        <p>
-                                            falar sobre
-                                        </p>
-                                    </div>
-                                    <div class="menu-list__item-price">
-                                        <span>R$</span>190,00
-                                    </div>
-                                </li>
-                                <li class="menu-list__item">
-                                    <div class="menu-list__item-desc">
-                                        <h4>Aplicação + cuticula e
-                                            decoração permanente</h4>
-                                        <p>
-                                            falar sobre
-                                        </p>
-                                    </div>
-                                    <div class="menu-list__item-price">
-                                        <span>R$</span>210,0O
-                                    </div>
-                            </ul> <!-- end menu-list -->
-                        </div> <!-- end tab-content__item -->
+                            <div class="whatsapp-direct">
+                                <p>Clique no botão abaixo para conversar diretamente pelo WhatsApp e agendar seu
+                                    horário:</p>
 
-                        <div id="tab-pastries" class="menu-block__group tab-content__item">
-
-                            <h6 class="menu-block__cat-name">
-                                Manutenção do Banho de Gel
-                            </h6>
-
-                            <ul class="menu-list">
-                                <li class="menu-list__item">
-                                    <div class="menu-list__item-desc">
-                                        <h4>Manutenção natural</h4>
-                                        <p>
-                                            Falar sobre
-                                        </p>
-                                    </div>
-                                    <div class="menu-list__item-price">
-                                        <span>R$</span>110,00
-                                    </div>
-                                </li>
-                                <li class="menu-list__item">
-                                    <div class="menu-list__item-desc">
-                                        <h4>Manutenção + cuticula e
-                                            esmaltação em gel simples</h4>
-                                        <p>
-                                            falar sobre
-                                        </p>
-                                    </div>
-                                    <div class="menu-list__item-price">
-                                        <span>R$</span>150,00
-                                    </div>
-                                </li>
-                                <li class="menu-list__item">
-                                    <div class="menu-list__item-desc">
-                                        <h4>Manutenção + cuticula e
-                                            decoração permanente</h4>
-                                        <p>
-                                            falar sobre
-                                        </p>
-                                    </div>
-                                    <div class="menu-list__item-price">
-                                        <span>R$</span>170,0O
-                                    </div>
-                            </ul> <!-- end menu-list -->
-                        </div> <!-- end tab-content__item -->
-
-
-
-                        <div id="tab-gourmet-treats" class="menu-block__group tab-content__item">
-
-                            <h6 class="menu-block__cat-name">
-                                Blindagem
-                            </h6>
-
-                            <ul class="menu-list">
-                                <li class="menu-list__item">
-                                    <div class="menu-list__item-desc">
-                                        <h4>Blindagem Power</h4>
-                                        <p>
-                                            Falar sobre
-                                        </p>
-                                    </div>
-                                    <div class="menu-list__item-price">
-                                        <span>R$</span>130,00
-                                    </div>
-                                </li>
-                                <li class="menu-list__item">
-                                    <div class="menu-list__item-desc">
-                                        <h4>Blindagem P. + Cuticula e
-                                            esmaltação em gel</h4>
-                                        <p>
-                                            Falar sobre
-                                        </p>
-                                    </div>
-                                    <div class="menu-list__item-price">
-                                        <span>R$</span>160,00
-                                    </div>
-                                </li>
-                                <li class="menu-list__item">
-                                    <div class="menu-list__item-desc">
-                                        <h4>Blindagem P. + cuticula e
-                                            decoração permanente</h4>
-                                        <p>
-                                            Falar sobre
-                                        </p>
-                                    </div>
-                                    <div class="menu-list__item-price">
-                                        <span>R$</span>180,00
-                                    </div>
-                                </li>
-
-                            </ul> <!-- end menu-list -->
+                                <a href="https://api.whatsapp.com/message/7FA5BSNMQNOEB1?autoload=1&app_absent=0"
+                                    class="btn btn--whatsapp" target="_blank">
+                                    <svg width="24" height="24" viewBox="0 0 24 24"
+                                        style="margin-right: 10px; vertical-align: middle;">
+                                        <path fill="currentColor"
+                                            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-6.29-12.21c-5.297 0-9.588 4.312-9.588 9.624 0 5.313 4.291 9.625 9.588 9.625 5.296 0 9.587-4.312 9.587-9.625 0-5.312-4.291-9.624-9.587-9.624zm0 17.77c-4.491 0-8.133-3.656-8.133-8.146 0-4.492 3.642-8.147 8.133-8.147 4.49 0 8.132 3.655 8.132 8.147 0 4.49-3.642 8.145-8.132 8.145z" />
+                                    </svg>
+                                    Abrir WhatsApp
+                                </a>
+                            </div>
 
                         </div> <!-- end tab-content__item -->
-
-
-                        <div id="tab-gourmet-treats" class="menu-block__group tab-content__item">
-
-                            <h6 class="menu-block__cat-name">
-                                Manutenção da Blindagem
-                            </h6>
-
-                            <ul class="menu-list">
-                                <li class="menu-list__item">
-                                    <div class="menu-list__item-desc">
-                                        <h4>Manutenção Natural</h4>
-                                        <p>
-                                            Falar sobre
-                                        </p>
-                                    </div>
-                                    <div class="menu-list__item-price">
-                                        <span>R$</span>100,00
-                                    </div>
-                                </li>
-                                <li class="menu-list__item">
-                                    <div class="menu-list__item-desc">
-                                        <h4>Manutenção + cuticula e
-                                            esmaltação em gel simples</h4>
-                                        <p>
-                                            Falar sobre
-                                        </p>
-                                    </div>
-                                    <div class="menu-list__item-price">
-                                        <span>R$</span>140,00
-                                    </div>
-                                </li>
-                                <li class="menu-list__item">
-                                    <div class="menu-list__item-desc">
-                                        <h4>Manutenção + cuticula e
-                                            decoração permanente</h4>
-                                        <p>
-                                            Falar sobre
-                                        </p>
-                                    </div>
-                                    <div class="menu-list__item-price">
-                                        <span>R$</span>160,00
-                                    </div>
-                                </li>
-
-                            </ul> <!-- end menu-list -->
-
-                        </div> <!-- end tab-content__item -->
-
-                        <div id="tab-gourmet-treats" class="menu-block__group tab-content__item">
-
-                            <h6 class="menu-block__cat-name">
-                                Esmaltação em Gel
-                                (UNHAS NATURAIS)
-                            </h6>
-
-                            <ul class="menu-list">
-                                <li class="menu-list__item">
-                                    <div class="menu-list__item-desc">
-                                        <h4>Manicure + esmaltação em
-                                            Gel simples</h4>
-                                        <p>
-                                            Falar sobre
-                                        </p>
-                                    </div>
-                                    <div class="menu-list__item-price">
-                                        <span>R$</span>80,00
-                                    </div>
-                                </li>
-                                <li class="menu-list__item">
-                                    <div class="menu-list__item-desc">
-                                        <h4>Manicure + esmaltação em
-                                            Gel com francesa ou
-                                            decorações</h4>
-                                        <p>
-                                            Falar sobre
-                                        </p>
-                                    </div>
-                                    <div class="menu-list__item-price">
-                                        <span>R$</span>100,00
-                                    </div>
-                                </li>
-                                <li class="menu-list__item">
-                                    <div class="menu-list__item-desc">
-                                        <h4>Pedicure</h4>
-                                        <p>
-                                            Falar sobre
-                                        </p>
-                                    </div>
-                                    <div class="menu-list__item-price">
-                                        <span>R$</span>80,00
-                                    </div>
-                                </li>
-                                <li class="menu-list__item">
-                                    <div class="menu-list__item-desc">
-                                        <h4>Combo Manicure + Pedicure</h4>
-                                        <p>
-                                            Falar sobre
-                                        </p>
-                                    </div>
-                                    <div class="menu-list__item-price">
-                                        <span>R$</span>150,00
-                                    </div>
-                                </li>
-
-                            </ul> <!-- end menu-list -->
-
-                        </div> <!-- end tab-content__item -->
-
-                        <div id="tab-gourmet-treats" class="menu-block__group tab-content__item">
-
-                            <h6 class="menu-block__cat-name">
-                                VALORES E SERVIÇOS
-                            </h6>
-
-                            <ul class="menu-list">
-                                <li class="menu-list__item">
-                                    <div class="menu-list__item-desc">
-                                        <h4>Pedrarias (o par)</h4>
-                                        <p>
-                                            Falar sobre
-                                        </p>
-                                    </div>
-                                    <div class="menu-list__item-price">
-                                        <span>R$</span>5,00
-                                    </div>
-                                </li>
-                                <li class="menu-list__item">
-                                    <div class="menu-list__item-desc">
-                                        <h4>Decoração Encapsulada (o
-                                            par)</h4>
-                                        <p>
-                                            Falar sobre
-                                        </p>
-                                    </div>
-                                    <div class="menu-list__item-price">
-                                        <span>R$</span>22,00
-                                    </div>
-                                </li>
-                                <li class="menu-list__item">
-                                    <div class="menu-list__item-desc">
-                                        <h4>Pó Cromado - Todas as unhas</h4>
-                                        <p>
-                                            Falar sobre
-                                        </p>
-                                    </div>
-                                    <div class="menu-list__item-price">
-                                        <span>R$</span>15,00
-                                    </div>
-                                </li>
-                                <li class="menu-list__item">
-                                    <div class="menu-list__item-desc">
-                                        <h4>Reposição de unha
-                                            individual (na manutenção)</h4>
-                                        <p>
-                                            Falar sobre
-                                        </p>
-                                    </div>
-                                    <div class="menu-list__item-price">
-                                        <span>R$</span>10,00
-                                    </div>
-                                </li>
-                                <li class="menu-list__item">
-                                    <div class="menu-list__item-desc">
-                                        <h4>Reposição de unha
-                                            individual (fora da
-                                            manutenção)</h4>
-                                        <p>
-                                            Falar sobre
-                                        </p>
-                                    </div>
-                                    <div class="menu-list__item-price">
-                                        <span>R$</span>15,00
-                                    </div>
-                                </li>
-                                <li class="menu-list__item">
-                                    <div class="menu-list__item-desc">
-                                        <h4>Remoção</h4>
-                                        <p>
-                                            Falar sobre
-                                        </p>
-                                    </div>
-                                    <div class="menu-list__item-price">
-                                        <span>R$</span>60,00
-                                    </div>
-                                </li>
-                                <li class="menu-list__item">
-                                    <div class="menu-list__item-desc">
-                                        <h4>Remoção para nova
-                                            aplicação</h4>
-                                        <p>
-                                            Falar sobre
-                                        </p>
-                                    </div>
-                                    <div class="menu-list__item-price">
-                                        <span>R$</span>30,00
-                                    </div>
-                                </li>
-                                <li class="menu-list__item">
-                                    <div class="menu-list__item-desc">
-                                        <h4>Realizamos manutenção de outra
-                                            profissional mediante avaliação</h4>
-                                        <p>
-                                            Falar sobre
-                                        </p>
-                                    </div>
-                                    <div class="menu-list__item-price">
-                                    </div>
-                                </li>
-                                <li class="menu-list__item">
-                                    <div class="menu-list__item-desc">
-                                        <h4>Valores sujeito á alteração aos domingos e
-                                            feriados (adicional de 30%)</h4>
-                                        <p>
-                                            Falar sobre
-                                        </p>
-                                    </div>
-                                    <div class="menu-list__item-price">
-                                    </div>
-                                </li>
-                            </ul> <!-- end menu-list -->
-
-                        </div> <!-- end tab-content__item -->
-
-
-
-
 
                     </div> <!-- menu-block -->
 
@@ -967,147 +257,1105 @@ document.addEventListener('DOMContentLoaded', function() {
 
         </section> <!-- end s-menu -->
 
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                // WhatsApp Form Submission
+                const whatsappBtn = document.getElementById('whatsapp-submit');
 
-        <!-- # gallery
-        ================================================== -->
+                whatsappBtn.addEventListener('click', function () {
+                    const name = document.getElementById('client-name').value;
+                    const date = document.getElementById('preferred-date').value;
+                    const time = document.getElementById('preferred-time').value;
+                    const service = document.getElementById('service-type').value;
+
+                    if (!name || !date || !time || !service) {
+                        alert('Por favor, preencha todos os campos antes de enviar.');
+                        return;
+                    }
+
+                    // Format date to dd/mm/yyyy
+                    const [year, month, day] = date.split('-');
+                    const formattedDate = `${day}/${month}/${year}`;
+
+                    // Montar mensagem (não precisa codificar campo por campo)
+                    let message = `*AGENDAMENTO*\n\n👤 *Nome:* ${name}\n📅 *Data:* ${formattedDate}\n⏰ *Horário:* ${time}\n💅 *Serviço:* ${service}\n\nPor favor, confirme a disponibilidade. Obrigada!`;
+
+                    // Codificar toda a mensagem
+                    let encodedMessage = encodeURIComponent(message);
+
+                    // Montar link do WhatsApp
+                    const whatsappUrl = `https://api.whatsapp.com/send?phone=5511933427537&text=${encodedMessage}`;
+
+                    window.open(whatsappUrl, '_blank');
+                });
+
+                // Tab Navigation
+                const tabLinks = document.querySelectorAll('.tab-nav__list a');
+
+                tabLinks.forEach(link => {
+                    link.addEventListener('click', function (e) {
+                        e.preventDefault();
+
+                        // Remove active class from all tabs
+                        document.querySelectorAll('.tab-nav__list li').forEach(item => {
+                            item.classList.remove('active');
+                        });
+
+                        // Add active class to clicked tab
+                        this.parentElement.classList.add('active');
+
+                        // Hide all tab content
+                        document.querySelectorAll('.tab-content__item').forEach(item => {
+                            item.classList.remove('active');
+                        });
+
+                        // Show selected tab content
+                        const tabId = this.getAttribute('href');
+                        document.querySelector(tabId).classList.add('active');
+                    });
+                });
+            });
+        </script>
+
+
+        <style>
+            /* WhatsApp Button Styles */
+            .btn--whatsapp {
+                background: #25D366;
+                color: white;
+                display: inline-flex;
+                align-items: center;
+                padding: 12px 24px;
+                border-radius: 4px;
+                text-decoration: none;
+                font-weight: 500;
+                transition: background 0.3s ease;
+            }
+
+            .btn--whatsapp:hover {
+                background: #128C7E;
+                color: white;
+            }
+
+            /* Form Styles */
+            .schedule-form .form-group {
+                margin-bottom: 1.5rem;
+            }
+
+            .schedule-form input,
+            .schedule-form select {
+                width: 100%;
+                padding: 12px;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                font-size: 1rem;
+            }
+
+            /* Tab Content */
+            .tab-content__item {
+                display: none;
+            }
+
+            .tab-content__item.active {
+                display: block;
+            }
+
+            /* Active Tab Indicator */
+            .tab-nav__list li.active a {
+                font-weight: bold;
+                color: #000;
+            }
+
+            .whatsapp-direct {
+                text-align: center;
+                padding: 2rem 0;
+            }
+
+            .whatsapp-direct p {
+                margin-bottom: 1.5rem;
+                color: #555;
+            }
+        </style>
+
+        <section id="menu" class="container s-menu target-section">
+
+            <div class="row s-menu__content">
+
+                <div class="column xl-4 lg-5 md-12 s-menu__content-start">
+
+                    <div class="section-header" data-num="02">
+                        <h2 class="text-display-title">Tabela de Valores</h2>
+                    </div>
+
+                    <nav class="tab-nav">
+                        <ul class="tab-nav__list">
+                            <li>
+                                <a href="#tab-alongamento">
+                                    <span>Alongamento</span>
+                                    <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round"
+                                        stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="m14.523 18.787s4.501-4.505 6.255-6.26c.146-.146.219-.338.219-.53s-.073-.383-.219-.53c-1.753-1.754-6.255-6.258-6.255-6.258-.144-.145-.334-.217-.524-.217-.193 0-.385.074-.532.221-.293.292-.295.766-.004 1.056l4.978 4.978h-14.692c-.414 0-.75.336-.75.75s.336.75.75.75h14.692l-4.979 4.979c-.289.289-.286.762.006 1.054.148.148.341.222.533.222.19 0 .378-.072.522-.215z"
+                                            fill-rule="nonzero" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#tab-manutencao-alongamento">
+                                    <span>Manutenção de Alongamento</span>
+                                    <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round"
+                                        stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="m14.523 18.787s4.501-4.505 6.255-6.26c.146-.146.219-.338.219-.53s-.073-.383-.219-.53c-1.753-1.754-6.255-6.258-6.255-6.258-.144-.145-.334-.217-.524-.217-.193 0-.385.074-.532.221-.293.292-.295.766-.004 1.056l4.978 4.978h-14.692c-.414 0-.75.336-.75.75s.336.75.75.75h14.692l-4.979 4.979c-.289.289-.286.762.006 1.054.148.148.341.222.533.222.19 0 .378-.072.522-.215z"
+                                            fill-rule="nonzero" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#tab-banho-gel">
+                                    <span>Banho de Gel</span>
+                                    <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round"
+                                        stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="m14.523 18.787s4.501-4.505 6.255-6.26c.146-.146.219-.338.219-.53s-.073-.383-.219-.53c-1.753-1.754-6.255-6.258-6.255-6.258-.144-.145-.334-.217-.524-.217-.193 0-.385.074-.532.221-.293.292-.295.766-.004 1.056l4.978 4.978h-14.692c-.414 0-.75.336-.75.75s.336.75.75.75h14.692l-4.979 4.979c-.289.289-.286.762.006 1.054.148.148.341.222.533.222.19 0 .378-.072.522-.215z"
+                                            fill-rule="nonzero" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#tab-manutencao-banho-gel">
+                                    <span>Manutenção de Banho de Gel</span>
+                                    <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round"
+                                        stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="m14.523 18.787s4.501-4.505 6.255-6.26c.146-.146.219-.338.219-.53s-.073-.383-.219-.53c-1.753-1.754-6.255-6.258-6.255-6.258-.144-.145-.334-.217-.524-.217-.193 0-.385.074-.532.221-.293.292-.295.766-.004 1.056l4.978 4.978h-14.692c-.414 0-.75.336-.75.75s.336.75.75.75h14.692l-4.979 4.979c-.289.289-.286.762.006 1.054.148.148.341.222.533.222.19 0 .378-.072.522-.215z"
+                                            fill-rule="nonzero" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#tab-blindagem">
+                                    <span>Blindagem POWER</span>
+                                    <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round"
+                                        stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="m14.523 18.787s4.501-4.505 6.255-6.26c.146-.146.219-.338.219-.53s-.073-.383-.219-.53c-1.753-1.754-6.255-6.258-6.255-6.258-.144-.145-.334-.217-.524-.217-.193 0-.385.074-.532.221-.293.292-.295.766-.004 1.056l4.978 4.978h-14.692c-.414 0-.75.336-.75.75s.336.75.75.75h14.692l-4.979 4.979c-.289.289-.286.762.006 1.054.148.148.341.222.533.222.19 0 .378-.072.522-.215z"
+                                            fill-rule="nonzero" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#tab-manutencao-blindagem">
+                                    <span>Manutenção da Blindagem POWER</span>
+                                    <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round"
+                                        stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="m14.523 18.787s4.501-4.505 6.255-6.26c.146-.146.219-.338.219-.53s-.073-.383-.219-.53c-1.753-1.754-6.255-6.258-6.255-6.258-.144-.145-.334-.217-.524-.217-.193 0-.385.074-.532.221-.293.292-.295.766-.004 1.056l4.978 4.978h-14.692c-.414 0-.75.336-.75.75s.336.75.75.75h14.692l-4.979 4.979c-.289.289-.286.762.006 1.054.148.148.341.222.533.222.19 0 .378-.072.522-.215z"
+                                            fill-rule="nonzero" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#tab-esmaltacao-gel">
+                                    <span>Manicure Moderna</span>
+                                    <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round"
+                                        stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="m14.523 18.787s4.501-4.505 6.255-6.26c.146-.146.219-.338.219-.53s-.073-.383-.219-.53c-1.753-1.754-6.255-6.258-6.255-6.258-.144-.145-.334-.217-.524-.217-.193 0-.385.074-.532.221-.293.292-.295.766-.004 1.056l4.978 4.978h-14.692c-.414 0-.75.336-.75.75s.336.75.75.75h14.692l-4.979 4.979c-.289.289-.286.762.006 1.054.148.148.341.222.533.222.19 0 .378-.072.522-.215z"
+                                            fill-rule="nonzero" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#tab-outros-servicos">
+                                    <span>Adicionais</span>
+                                    <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round"
+                                        stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="m14.523 18.787s4.501-4.505 6.255-6.26c.146-.146.219-.338.219-.53s-.073-.383-.219-.53c-1.753-1.754-6.255-6.258-6.255-6.258-.144-.145-.334-.217-.524-.217-.193 0-.385.074-.532.221-.293.292-.295.766-.004 1.056l4.978 4.978h-14.692c-.414 0-.75.336-.75.75s.336.75.75.75h14.692l-4.979 4.979c-.289.289-.286.762.006 1.054.148.148.341.222.533.222.19 0 .378-.072.522-.215z"
+                                            fill-rule="nonzero" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav> <!-- end tab-nav -->
+
+                </div> <!-- end s-menu__content-start -->
+
+                <div class="column xl-6 lg-6 md-12 s-menu__content-end">
+
+                    <div class="tab-content menu-block">
+
+                        <div id="tab-alongamento" class="menu-block__group tab-content__item">
+                            <h6 class="menu-block__cat-name">Alongamento</h6>
+                            <p>O alongamento de unhas é a solução ideal para quem deseja unhas longas e bem cuidadas
+                                imediatamente,
+                                especialmente para quem tem unhas quebradiças. Realizado com técnica personalizada em
+                                fibra de vidro ou molde F1,
+                                o método é adaptado à anatomia das unhas de cada cliente, garantindo um resultado
+                                natural, resistente e duradouro.
+                                Perfeito para quem quer unhas impecáveis sem esperar o crescimento natural.</p>
+                            <ul class="menu-list">
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Aplicação natural</h4>
+                                        <p>Inclui: Aplicação do alongamento com aspecto natural, pensado pra quem busca
+                                            unhas discretas, alinhadas e resistentes. (Sem
+                                            cuticula,esmaltação/decoração)</p>
+                                    </div>
+                                    <div class="menu-list__item-price">
+                                        <span>R$</span>160,00
+                                    </div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Aplicação + cuticula e esmaltação em gel simples</h4>
+                                        <p>Inlcui: Aplicação do alongamento + remoção de cutículas + esmaltação em gel
+                                            simples (sem decoração).</p>
+                                    </div>
+                                    <div class="menu-list__item-price">
+                                        <span>R$</span>200,00
+                                    </div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Aplicação + cuticula e decoração permanente</h4>
+                                        <p>Inclui: Aplicação do alongamento + remoção de cutículas + decoração
+                                            permanente (durável, não sai com o tempo).</p>
+                                    </div>
+                                    <div class="menu-list__item-price">
+                                        <span>R$</span>220.00
+                                    </div>
+                                </li>
+                            </ul>
+                        </div> <!-- end tab-alongamento -->
+
+                        <div id="tab-manutencao-alongamento" class="menu-block__group tab-content__item">
+                            <h6 class="menu-block__cat-name">Manutenção do Alongamento</h6>
+                            <ul class="menu-list">
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Manutenção natural</h4>
+                                    </div>
+                                    <div class="menu-list__item-price">
+                                        <span>R$</span>110,00
+                                    </div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Manutenção + cuticula e esmaltação em gel simples</h4>
+                                    </div>
+                                    <div class="menu-list__item-price">
+                                        <span>R$</span>150,00
+                                    </div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Manutenção + cuticula e decoração permanente</h4>
+                                    </div>
+                                    <div class="menu-list__item-price">
+                                        <span>R$</span>170,00
+                                    </div>
+                                </li>
+                            </ul>
+                        </div> <!-- end tab-manutencao-alongamento -->
+
+                        <div id="tab-banho-gel" class="menu-block__group tab-content__item">
+                            <h6 class="menu-block__cat-name">Banho de Gel</h6>
+                            <p>O banho de gel é perfeito para quem deseja unhas naturais bonitas, fortes e bem cuidadas.
+                                Ele protege as unhas, evitando quebras e descamações,
+                                enquanto mantém um visual elegante e impecável por semanas. Se suas unhas já têm um bom
+                                comprimento, esse procedimento ajuda a preservá-lo,
+                                deixando-as resistentes e com um brilho intenso. O resultado são unhas saudáveis, com um
+                                acabamento sofisticado e duradouro, ideal para quem busca praticidade sem abrir mão da
+                                beleza.</p>
+                            <ul class="menu-list">
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Aplicação natural</h4>
+                                    </div>
+                                    <div class="menu-list__item-price">
+                                        <span>R$</span>150,00
+                                    </div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Aplicação + cuticula e esmaltação em gel simples</h4>
+                                    </div>
+                                    <div class="menu-list__item-price">
+                                        <span>R$</span>190,00
+                                    </div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Aplicação + cuticula e decoração permanente</h4>
+                                    </div>
+                                    <div class="menu-list__item-price">
+                                        <span>R$</span>210,00
+                                    </div>
+                                </li>
+                            </ul>
+                        </div> <!-- end tab-banho-gel -->
+
+                        <div id="tab-manutencao-banho-gel" class="menu-block__group tab-content__item">
+                            <h6 class="menu-block__cat-name">Manutenção do Banho de Gel</h6>
+                            <ul class="menu-list">
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Manutenção natural</h4>
+                                    </div>
+                                    <div class="menu-list__item-price">
+                                        <span>R$</span>110,00
+                                    </div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Manutenção + cuticula e esmaltação em gel simples</h4>
+                                    </div>
+                                    <div class="menu-list__item-price">
+                                        <span>R$</span>150,00
+                                    </div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Manutenção + cuticula e decoração permanente</h4>
+                                    </div>
+                                    <div class="menu-list__item-price">
+                                        <span>R$</span>170,00
+                                    </div>
+                                </li>
+                            </ul>
+                        </div> <!-- end tab-manutencao-banho-gel -->
+
+                        <div id="tab-blindagem" class="menu-block__group tab-content__item">
+                            <h6 class="menu-block__cat-name">Blindagem POWER</h6>
+                            <p>A blindagem é ideal para unhas curtas, pois fortalece e protege sem adicionar volume.
+                                Diferente do alongamento, ela reforça a lâmina natural, evitando quebras e ajudando no
+                                crescimento, enquanto mantém um visual discreto e bem cuidado.
+                                Perfeita para quem busca unhas resistentes e naturais!</p>
+                            <ul class="menu-list">
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Blindagem Power</h4>
+                                    </div>
+                                    <div class="menu-list__item-price">
+                                        <span>R$</span>130,00
+                                    </div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Blindagem P. + Cuticula e esmaltação em gel</h4>
+                                    </div>
+                                    <div class="menu-list__item-price">
+                                        <span>R$</span>160,00
+                                    </div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Blindagem P. + cuticula e decoração permanente</h4>
+                                    </div>
+                                    <div class="menu-list__item-price">
+                                        <span>R$</span>180,00
+                                    </div>
+                                </li>
+                            </ul>
+                        </div> <!-- end tab-blindagem -->
+
+                        <div id="tab-manutencao-blindagem" class="menu-block__group tab-content__item">
+                            <h6 class="menu-block__cat-name">Manutenção da Blindagem</h6>
+                            <ul class="menu-list">
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Manutenção Natural</h4>
+                                    </div>
+                                    <div class="menu-list__item-price">
+                                        <span>R$</span>100,00
+                                    </div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Manutenção + cuticula e esmaltação em gel simples</h4>
+                                    </div>
+                                    <div class="menu-list__item-price">
+                                        <span>R$</span>140,00
+                                    </div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Manutenção + cuticula e decoração permanente</h4>
+                                    </div>
+                                    <div class="menu-list__item-price">
+                                        <span>R$</span>160,00
+                                    </div>
+                                </li>
+                            </ul>
+                        </div> <!-- end tab-manutencao-blindagem -->
+
+                        <div id="tab-esmaltacao-gel" class="menu-block__group tab-content__item">
+                            <h6 class="menu-block__cat-name">Manicure Moderna</h6>
+                            <p>A Manicure Moderna é a esmaltação em gel que oferece um brilho intenso e único, com
+                                secagem imediata que garante praticidade e sem risco de borrar. Seu visual fica
+                                impecável,
+                                mantendo um acabamento perfeito por até 3 semanas.</p>
+                            <ul class="menu-list">
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Manicure Moderna Simples</h4>
+                                        <p>Inclui: Remoção da cuticula, preparação + aplicação do gel base e esmaltação
+                                            em gel simples </p>
+                                    </div>
+                                    <div class="menu-list__item-price">
+                                        <span>R$</span>80,00
+                                    </div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Manicure Moderna Decorada</h4>
+                                        <p>Inclui: Remoção da cuticula, preparação + aplicação do gel base e esmaltação
+                                            em gel com decoração</p>
+                                    </div>
+                                    <div class="menu-list__item-price">
+                                        <span>R$</span>100,00
+                                    </div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Pedicure Moderno</h4>
+                                        <p>Inclui: Remoção da cuticula, preparação + aplicação do gel base e esmaltação
+                                            em gel</p>
+                                    </div>
+                                    <div class="menu-list__item-price">
+                                        <span>R$</span>80,00
+                                    </div>
+                                </li>
+
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Manicure + Pedicure Moderno - Simples</h4>
+                                        <p></p>
+                                    </div>
+                                    <div class="menu-list__item-price">
+                                        <span>R$</span>160,00
+                                    </div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Manicure + Pedicure Moderno - Decorado</h4>
+                                        <p></p>
+                                    </div>
+                                    <div class="menu-list__item-price">
+                                        <span>R$</span>180,00
+                                    </div>
+                                </li>
+                            </ul>
+                        </div> <!-- end tab-esmaltacao-gel -->
+
+                        <div id="tab-outros-servicos" class="menu-block__group tab-content__item">
+                            <h6 class="menu-block__cat-name">VALORES E SERVIÇOS</h6>
+                            <ul class="menu-list">
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Aplicação de pedrarias</h4>
+                                    </div>
+                                    <div class="menu-list__item-price">
+                                        <span>R$</span>10,00
+                                    </div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Decoração Encapsulada - O Par</h4>
+                                        <p>Falar sobre</p>
+                                    </div>
+                                    <div class="menu-list__item-price">
+                                        <span>R$</span>25,00
+                                    </div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Decoração Encapsulada - Todas as unhas</h4>
+                                        <p>Falar </p>
+                                    </div>
+                                    <div class="menu-list__item-price">
+                                        <span>R$</span>50,00
+                                    </div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Pó Cromado</h4>
+                                    </div>
+                                    <div class="menu-list__item-price">
+                                        <span>R$</span>15,00
+                                    </div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Reposição de unha individual - Na Manutenção</h4>
+                                    </div>
+                                    <div class="menu-list__item-price">
+                                        <span>R$</span>10,00
+                                    </div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Reposição de unha individual - Fora da Manutenção</h4>
+                                    </div>
+                                    <div class="menu-list__item-price">
+                                        <span>R$</span>15,00
+                                    </div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Remoção</h4>
+                                        <p>remoçao segura, inclui cuticulagem + base </p>
+                                    </div>
+                                    <div class="menu-list__item-price">
+                                        <span>R$</span>60,00
+                                    </div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Remoção para nova Aplicação</h4>
+                                    </div>
+                                    <div class="menu-list__item-price">
+                                        <span>R$</span>30,00
+                                    </div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Realizamos Manutenção de outra profissional mediante avaliação</h4>
+                                    </div>
+                                    <div class="menu-list__item-price"></div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Valores sujeito á alteração aos domingos e feriados (adicional de 30%)</h4>
+                                    </div>
+                                    <div class="menu-list__item-price"></div>
+                                </li>
+                            </ul>
+                        </div> <!-- end tab-outros-servicos -->
+
+                    </div> <!-- menu-block -->
+
+                </div> <!-- end s-menu__content-end -->
+
+            </div> <!-- end s-menu__content -->
+
+        </section> <!-- end s-menu -->
+
+        <!-- JavaScript para controle das abas -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                // Esconde todas as abas exceto a primeira
+                const tabs = document.querySelectorAll('.tab-content__item');
+                tabs.forEach((tab, index) => {
+                    if (index !== 0) {
+                        tab.style.display = 'none';
+                    }
+                });
+
+                // Adiciona evento de clique para cada link do menu
+                document.querySelectorAll('.tab-nav a').forEach(link => {
+                    link.addEventListener('click', function (e) {
+                        e.preventDefault();
+
+                        // Esconde todas as abas
+                        tabs.forEach(tab => {
+                            tab.style.display = 'none';
+                        });
+
+                        // Mostra apenas a aba correspondente
+                        const targetId = this.getAttribute('href');
+                        document.querySelector(targetId).style.display = 'block';
+                    });
+                });
+            });
+        </script>
+
         <section id="gallery" class="container s-gallery target-section">
-
             <div class="row s-gallery__header">
                 <div class="column xl-12 section-header-wrap">
                     <div class="section-header" data-num="03">
                         <h2 class="text-display-title">Portifólio</h2>
                     </div>
-                </div> <!-- end section-header-wrap -->
-            </div> <!-- end s-gallery__header -->
+                </div>
+            </div>
 
             <div class="gallery-items grid-cols grid-cols--wrap">
 
                 <div class="gallery-items__item grid-cols__column">
-                    <a href="images/gallery/large/l-gallery-01.JPEG" class="gallery-items__item-thumb glightbox">
-                        <img src="images/gallery/gallery-01.JPEG" srcset="images/gallery/gallery-01.JPEG 1x, 
-                                    images/gallery/gallery-01@2x.JPEG 2x" alt="">
-                    </a>
-                </div> <!-- end gallery-items__item-->
+                    <figure>
+                        <a href="images/gallery/large/l-gallery-01.JPEG" class="gallery-items__item-thumb glightbox">
+                            <img src="images/gallery/gallery-01.JPEG"
+                                srcset="images/gallery/gallery-01.JPEG 1x, images/gallery/gallery-01@2x.JPEG 1x" alt="">
+                        </a>
+                        <figcaption class="gallery-caption">Alongamento</figcaption>
+                    </figure>
+                </div>
 
                 <div class="gallery-items__item grid-cols__column">
-                    <a href="images/gallery/large/l-gallery-02.JPEG" class="gallery-items__item-thumb glightbox">
-                        <img src="images/gallery/gallery-02.JPEG" srcset="images/gallery/gallery-02.JPEG 1x, 
-                                    images/gallery/gallery-02@2x.JPEG 2x" alt="">
-                    </a>
-                </div> <!-- end gallery-items__item -->
+                    <figure>
+                        <a href="images/gallery/large/l-gallery-02.JPEG" class="gallery-items__item-thumb glightbox">
+                            <img src="images/gallery/gallery-02.JPEG"
+                                srcset="images/gallery/gallery-02.JPEG 1x, images/gallery/gallery-02@2x.JPEG 2x" alt="">
+                        </a>
+                        <figcaption class="gallery-caption">Esmaltação em Gel nas Unhas Naturais</figcaption>
+                    </figure>
+                </div>
 
                 <div class="gallery-items__item grid-cols__column">
-                    <a href="images/gallery/large/l-gallery-03.JPEG" class="gallery-items__item-thumb glightbox">
-                        <img src="images/gallery/gallery-03.JPEG" srcset="images/gallery/gallery-03.JPEG 1x, 
-                                    images/gallery/gallery-03@2x.JPEG 2x" alt="">
-                    </a>
-                </div> <!-- end gallery-items__item -->
+                    <figure>
+                        <a href="images/gallery/large/l-gallery-03.JPEG" class="gallery-items__item-thumb glightbox">
+                            <img src="images/gallery/gallery-03.JPEG"
+                                srcset="images/gallery/gallery-03.JPEG 1x, images/gallery/gallery-03@2x.JPEG 2x" alt="">
+                        </a>
+                        <figcaption class="gallery-caption">Alongamento</figcaption>
+                    </figure>
+                </div>
 
                 <div class="gallery-items__item grid-cols__column">
-                    <a href="images/gallery/large/l-gallery-04.JPEG" class="gallery-items__item-thumb glightbox">
-                        <img src="images/gallery/gallery-04.JPEG" srcset="images/gallery/gallery-04.JPEG 1x, 
-                                    images/gallery/gallery-04@2x.JPEG 2x" alt="">
-                    </a>
-                </div> <!-- end gallery-items__item -->
+                    <figure>
+                        <a href="images/gallery/large/l-gallery-04.JPEG" class="gallery-items__item-thumb glightbox">
+                            <img src="images/gallery/gallery-04.JPEG"
+                                srcset="images/gallery/gallery-04.JPEG 1x, images/gallery/gallery-04@2x.JPEG 2x" alt="">
+                        </a>
+                        <figcaption class="gallery-caption">Banho de Gel</figcaption>
+                    </figure>
+                </div>
 
                 <div class="gallery-items__item grid-cols__column">
-                    <a href="images/gallery/large/l-gallery-05.JPEG" class="gallery-items__item-thumb glightbox">
-                        <img src="images/gallery/gallery-05.JPEG" srcset="images/gallery/gallery-05.JPEG 1x, 
-                                    images/gallery/gallery-05@2x.JPEG 2x" alt="">
-                    </a>
-                </div> <!-- end gallery-items__item -->
+                    <figure>
+                        <a href="images/gallery/large/l-gallery-05.JPEG" class="gallery-items__item-thumb glightbox">
+                            <img src="images/gallery/gallery-05.JPEG"
+                                srcset="images/gallery/gallery-05.JPEG 1x, images/gallery/gallery-05@2x.JPEG 2x" alt="">
+                        </a>
+                        <figcaption class="gallery-caption">Manicure Moderna</figcaption>
+                    </figure>
+                </div>
 
                 <div class="gallery-items__item grid-cols__column">
-                    <a href="images/gallery/large/l-gallery-06.JPEG" class="gallery-items__item-thumb glightbox">
-                        <img src="images/gallery/gallery-06.JPEG" srcset="images/gallery/gallery-06.JPEG 1x, 
-                                    images/gallery/gallery-06@2x.JPEG 2x" alt="">
-                    </a>
-                </div> <!-- end gallery-items__item -->
+                    <figure>
+                        <a href="images/gallery/large/l-gallery-06.JPEG" class="gallery-items__item-thumb glightbox">
+                            <img src="images/gallery/gallery-06.JPEG"
+                                srcset="images/gallery/gallery-06.JPEG 1x, images/gallery/gallery-06@2x.JPEG 2x" alt="">
+                        </a>
+                        <figcaption class="gallery-caption">Blindagem</figcaption>
+                    </figure>
+                </div>
 
                 <div class="gallery-items__item grid-cols__column">
-                    <a href="images/gallery/large/l-gallery-07.JPEG" class="gallery-items__item-thumb glightbox">
-                        <img src="images/gallery/gallery-07.jpg" srcset="images/gallery/gallery-07.JPEG 1x, 
-                                    images/gallery/gallery-07@2x.JPEG 2x" alt="">
-                    </a>
-                </div> <!-- end gallery-items__item -->
+                    <figure>
+                        <a href="images/gallery/large/l-gallery-07.JPEG" class="gallery-items__item-thumb glightbox">
+                            <img src="images/gallery/gallery-07.jpg"
+                                srcset="images/gallery/gallery-07.JPEG 1x, images/gallery/gallery-07@2x.JPEG 2x" alt="">
+                        </a>
+                        <figcaption class="gallery-caption">Drink Relaxante</figcaption>
+                    </figure>
+                </div>
 
                 <div class="gallery-items__item grid-cols__column">
-                    <a href="images/gallery/large/l-gallery-08.JPEG" class="gallery-items__item-thumb glightbox">
-                        <img src="images/gallery/gallery-08.JPEG" srcset="images/gallery/gallery-08.JPEG 1x, 
-                                    images/gallery/gallery-08@2x.JPEG 2x" alt="">
-                    </a>
-                </div> <!-- end gallery-items__item -->
+                    <figure>
+                        <a href="images/gallery/large/l-gallery-08.JPEG" class="gallery-items__item-thumb glightbox">
+                            <img src="images/gallery/gallery-08.JPEG"
+                                srcset="images/gallery/gallery-08.JPEG 1x, images/gallery/gallery-08@2x.JPEG 2x" alt="">
+                        </a>
+                        <figcaption class="gallery-caption">Cadeira de Massagem</figcaption>
+                    </figure>
+                </div>
 
-            </div> <!-- end grid-list-items -->
+            </div> <!-- end gallery-items -->
 
         </section> <!-- end s-gallery -->
 
         <br>
         <!-- # testimonials
         ================================================== -->
-        <section id="cursos" class="container s-gallery target-section">
+        <style>
+            .caixa-externa {
+                background: #fff;
+                padding: 2rem;
+                margin: 2rem auto;
+                border-radius: 16px;
+                box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+                max-width: 1200px;
+            }
 
+            .plano_container {
+                display: flex;
+                gap: 2rem;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            .plano_card {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 100%;
+            }
+
+            .plano_card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+            }
+
+            .plano_card.recomendado {
+                border: 2px solid #1E1E8C;
+                position: relative;
+                overflow: hidden;
+            }
+
+            .plano_card.recomendado::before {
+                content: "RECOMENDADO";
+                position: absolute;
+                top: 10px;
+                right: -30px;
+                background: #1E1E8C;
+                color: black;
+                padding: 3px 30px;
+                font-size: 12px;
+                font-weight: bold;
+                transform: rotate(45deg);
+            }
+
+            .plano_card h3 {
+                font-size: 1.5rem;
+                margin-bottom: 1rem;
+                color: #333;
+            }
+
+            .plano_card h3 strong {
+                color: #1E1E8C;
+            }
+
+            .plano_card hr {
+                border: none;
+                height: 1px;
+                background: linear-gradient(to right, transparent, #ddd, transparent);
+                margin: 1rem 0;
+            }
+
+            .descricao {
+                color: #666;
+                margin-bottom: 1.5rem;
+                font-size: 0.9rem;
+                min-height: 40px;
+            }
+
+            .preco-original {
+                text-decoration: line-through;
+                color: #999;
+                font-size: 1rem;
+            }
+
+            .preco {
+                font-size: 1.8rem;
+                font-weight: bold;
+                color: #1E1E8C;
+                margin: 0.5rem 0;
+            }
+
+            .economia {
+                background: #f8f8f8;
+                color: #4CAF50;
+                padding: 0.5rem;
+                border-radius: 4px;
+                font-weight: bold;
+                font-size: 0.9rem;
+                margin: 1rem 0;
+            }
+
+            .btn {
+                display: block;
+                background: #1E1E8C;
+                color: white;
+                text-align: center;
+                padding: 12px;
+                border-radius: 6px;
+                text-decoration: none;
+                font-weight: bold;
+                transition: background 0.3s ease;
+                margin-top: 1.5rem;
+            }
+
+            .btn:hover {
+                background: #8e24aa;
+            }
+        </style>
+
+        <style>
+            .caixa-externa {
+                background: #fff;
+                padding: 2rem;
+                margin: 2rem auto;
+                border-radius: 16px;
+                box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+                max-width: 1200px;
+            }
+
+            .plano_container {
+                display: flex;
+                gap: 2rem;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            .plano_card {
+                background: white;
+                border-radius: 12px;
+                padding: 2rem;
+                width: 300px;
+                box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                position: relative;
+                border: 1px solid #f0f0f0;
+            }
+
+                {
+                .plano_card .btn {
+                    margin-top: auto;
+                }
+
+                .plano_card:hover {
+                    transform: translateY(-5px);
+                    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+                }
+
+                .plano_card.recomendado {
+                    border: 2px solid #1E1E8C;
+                    position: relative;
+                    overflow: hidden;
+                }
+
+                .plano_card.recomendado::before {
+                    content: "RECOMENDADO";
+                    position: absolute;
+                    top: 10px;
+                    right: -30px;
+                    background: #FFD700;
+                    color: black;
+                    padding: 3px 30px;
+                    font-size: 12px;
+                    font-weight: bold;
+                    transform: rotate(45deg);
+                }
+
+                .plano_card h3 {
+                    font-size: 1.5rem;
+                    margin-bottom: 1rem;
+                    color: #333;
+                }
+
+                .plano_card h3 strong {
+                    color: #1E1E8C;
+                }
+
+                .plano_card hr {
+                    border: none;
+                    height: 1px;
+                    background: linear-gradient(to right, transparent, #ddd, transparent);
+                    margin: 1rem 0;
+                }
+
+                .descricao {
+                    color: #666;
+                    margin-bottom: 1.5rem;
+                    font-size: 0.9rem;
+                    min-height: 40px;
+                }
+
+                .preco-original {
+                    text-decoration: line-through;
+                    color: #999;
+                    font-size: 1rem;
+                }
+
+                .preco {
+                    font-size: 1.8rem;
+                    font-weight: bold;
+                    color: #1E1E8C;
+                    margin: 0.5rem 0;
+                }
+
+                .economia {
+                    background: #f8f8f8;
+                    color: #4CAF50;
+                    padding: 0.5rem;
+                    border-radius: 4px;
+                    font-weight: bold;
+                    font-size: 0.9rem;
+                    margin: 1rem 0;
+                }
+
+                .btn {
+                    display: block;
+                    background: #1E1E8C;
+                    color: white;
+                    text-align: center;
+                    padding: 12px;
+                    border-radius: 6px;
+                    text-decoration: none;
+                    font-weight: bold;
+                    transition: background 0.3s ease;
+                    margin-top: 1.5rem;
+                }
+
+                .btn:hover {
+                    background: #8e24aa;
+                }
+
+                .plano_detalhes {
+                    margin-top: 3rem;
+                    width: 100%;
+                }
+
+                details {
+                    margin-bottom: 1.5rem;
+                    border-radius: 8px;
+                    overflow: hidden;
+                    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+                }
+
+                details[open] {
+                    border: 1px solid #e0e0e0;
+                }
+
+                summary {
+                    padding: 1rem;
+                    background: #f9f9f9;
+                    cursor: pointer;
+                    font-weight: bold;
+                    color: #1E1E8C;
+                    list-style: none;
+                }
+
+                summary:hover {
+                    background: #f0f0f0;
+                }
+
+                table {
+                    width: 100%;
+                    border-collapse: collapse;
+                }
+
+                th,
+                td {
+                    padding: 12px 15px;
+                    text-align: left;
+                    border-bottom: 1px solid #eee;
+                }
+
+                th {
+                    background-color: #f5f5f5;
+                    font-weight: 600;
+                }
+
+                .secao th {
+                    background-color: #1E1E8C;
+                    color: white;
+                }
+
+                .check {
+                    color: #4CAF50;
+                    font-weight: bold;
+                }
+
+                .x {
+                    color: #f44336;
+                    font-weight: bold;
+                }
+
+                tr:nth-child(even) {
+                    background-color: #f9f9f9;
+                }
+
+                tr:hover {
+                    background-color: #f0f0f0;
+                }
+        </style>
+        <section id="cursos" class="container s-gallery target-section">
             <div class="row s-gallery__header">
                 <div class="column xl-12 section-header-wrap">
                     <div class="section-header" data-num="04">
                         <h2 class="text-display-title">Cursos</h2>
                     </div>
-                </div> <!-- end section-header-wrap -->
-            </div> <!-- end s-gallery__header -->
+                </div>
+            </div>
+            <div class="caixa-externa">
+                <div class="plano_container">
 
-
-            <div class="row s-pricing__content">
-                <div class="column xl-12">
-
-                    <div class="cards-container">
-                        <!-- Plano Gratuito -->
-                        <div class="pricing-card">
-                            <h3 class="pricing-card__title">Plano Gratuito</h3>
-                            <p class="pricing-card__price">R$<span class="pricing-card__value">0</span> / mês</p>
-                            <ul class="pricing-card__features">
-                                <li>✓ Acesso ao painel básico</li>
-                                <li>✓ Relatórios mensais simples</li>
-                                <li>✓ Suporte por e-mail</li>
-                                <li class="disabled">✗ Consultoria personalizada</li>
-                                <li class="disabled">✗ Emissão de notas fiscais</li>
+                    <!-- Curso 1 -->
+                    <div class="plano_card">
+                        <h3>Curso <strong>Manicure Moderna</strong></h3>
+                        <hr>
+                        <div class="descricao">
+                            <ul class="lista-beneficios">
+                                <li><i>Preparação das unhas</i> – Cutilagem, lixamento e assepsia correta.</li>
+                                <li><i>Aplicação perfeita</i> – Base, cor e top coat com secagem em LED/UV.</li>
+                                <li><i>Nail Art em gel</i> – Designs criativos e personalizados.</li>
+                                <li><i>Remoção segura</i> – Sem danificar a unha natural.</li>
+                                <li><i>Blindagem e fortalecimento</i> – Técnicas para unhas mais resistentes.</li>
+                                <li><i>Gestão profissional</i> – Como precificar e divulgar seu trabalho.</li>
                             </ul>
-                            <button class="pricing-card__btn">Começar grátis</button>
+                            <p class="destaque">Ideal para quem quer se destacar no mercado de beleza com técnicas
+                                atualizadas e alta durabilidade! 💅</p>
                         </div>
+                        <div class="preco-original">R$ 790,00</div>
+                        <div class="preco">R$ 590,00</div>
+                        <div class="economia">Economize R$ 200,00</div>
+                        <br>
+                        <a href="#" class="btn">CONTRATAR</a>
+                    </div>
 
-                        <!-- Plano Empresarial -->
-                        <div class="pricing-card highlight">
-                            <h3 class="pricing-card__title">Plano Empresarial</h3>
-                            <p class="pricing-card__price">R$<span class="pricing-card__value">149</span> / mês</p>
-                            <ul class="pricing-card__features">
-                                <li>✓ Acesso completo ao sistema</li>
-                                <li>✓ Relatórios detalhados e personalizados</li>
-                                <li>✓ Suporte via WhatsApp</li>
-                                <li>✓ Consultoria contábil mensal</li>
-                                <li>✓ Emissão ilimitada de notas fiscais</li>
+                    <!-- Curso 2 (Destaque) -->
+                    <div class="plano_card recomendado">
+                        <h3>Curso <strong>Alongamento Profissional</strong></h3>
+                        <div class="descricao">
+                            <ul class="lista-beneficios">
+                                <li><i>Técnicas de alongamento</i> – Aprenda fibra de vidro, gel builder e tips.</li>
+                                <li><i>Preparação profissional</i> – Cutilagem, lixamento e assepsia para alongamento.
+                                </li>
+                                <li><i>Moldagem perfeita</i> – Formato stiletto, quadrado, bailarina e mais.</li>
+                                <li><i>Manutenção e reparos</i> – Como fazer fills e corrigir quebras.</li>
+                                <li><i>Blindagem de unhas</i> – Técnicas para fortalecimento e durabilidade.</li>
+                                <li><i>Gestão profissional</i> – Precificação e divulgação para serviços premium.</li>
                             </ul>
-                            <button class="pricing-card__btn">Assinar agora</button>
-                        </div>
+                            <p class="destaque">Domine as técnicas mais procuradas do mercado e ofereça alongamentos
+                                impecáveis com até 30 dias de duração! 💎</p>
+                            <div class="preco-original">R$ 790,00</div>
+                            <div class="preco">R$ 590,00</div>
+                            <div class="economia">Economize R$ 200,00</div>
+                            <br>
+                            <a href="#" class="btn">CONTRATAR</a>
 
-                        <!-- Plano Premium -->
-                        <div class="pricing-card">
-                            <h3 class="pricing-card__title">Plano Premium</h3>
-                            <p class="pricing-card__price">R$<span class="pricing-card__value">249</span> / mês</p>
-                            <ul class="pricing-card__features">
-                                <li>✓ Todos os recursos do plano empresarial</li>
-                                <li>✓ Atendimento exclusivo</li>
-                                <li>✓ Acompanhamento tributário em tempo real</li>
-                                <li>✓ Reuniões mensais com especialista</li>
-                                <li>✓ Suporte para integração com sistemas</li>
-                            </ul>
-                            <button class="pricing-card__btn">Contratar</button>
                         </div>
                     </div>
 
+                    <!-- Curso 3 -->
+                    <div class="plano_card">
+                        <h3>Curso <strong>Combo Nail Designer</strong></h3>
+                        <hr>
+                        <div class="descricao">
+                            <p class="subtitulo">Pacote completo do básico ao avançado</p>
+                            <ul class="lista-beneficios">
+                                <li><i>Alongamento Profissional</i> - Fibra de vidro, gel builder e tips</li>
+                                <li><i>Esmaltação em Gel Premium</i> - Técnicas para até 21 dias de duração</li>
+                                <li><i>Nail Art Avançada</i> - Encapsulados, efeitos 3D e mix de técnicas</li>
+                                <li><i>Manutenção Expert</i> - Fills, reparos e correções sem danificar</li>
+                                <li><i>Blindagem Reforçada</i> - Para clientes com unhas frágeis</li>
+                                <li><i>Gestão Completa</i> - Precificação, portfólio e fidelização</li>
+                            </ul>
+                            <p class="destaque">Domine todas as técnicas do mercado e ofereça serviços premium com este
+                                pacote completo! ✨</p>
+                        </div>
+                        <div class="preco-original">R$ 1.500,00</div>
+                        <div class="preco">R$ 1.200,00</div>
+                        <div class="economia">Economize R$ 300,00</div>
+                        <a href="#" class="btn">CONTRATAR</a>
+                    </div>
                 </div>
             </div>
-
         </section>
-
         <style>
             .s-pricing {
                 padding: 120px 0;
@@ -1230,17 +1478,18 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             }
         </style>
+
         <br>
         <br>
         <br>
-        
-   <section id="about" class="container s-about target-section">
+
+        <section id="about" class="container s-about target-section">
 
             <div class="row s-about__content">
 
                 <div class="column xl-4 lg-5 md-12 s-about__content-start">
 
-                    <div class="section-header" data-num="04">
+                    <div class="section-header" data-num="05">
                         <h2 class="text-display-title">Nosso Time</h2>
                     </div>
 
@@ -1248,20 +1497,19 @@ document.addEventListener('DOMContentLoaded', function() {
                     <div class="team-images" id="swipe-area">
                         <!-- Imagem 1 -->
                         <figure class="about-pic-primary active">
-                            <img src="images/team1.jpeg" srcset="images/team1.jpeg 1x, images/team1.jpeg 2x"
-                                alt="Ana Beatriz">
+                            <img src="images/team1.jpeg" srcset="images/team1.jpeg 1x, images/team1.jpeg 2x" alt="Sara">
                         </figure>
 
                         <!-- Imagem 2 -->
                         <figure class="about-pic-primary">
                             <img src="images/team2.jpeg" srcset="images/team2.jpeg 1x, images/team2.jpeg 2x"
-                                alt="Carlos Mendes">
+                                alt="Livia">
                         </figure>
 
                         <!-- Imagem 3 -->
                         <figure class="about-pic-primary">
                             <img src="images/team3.jpeg" srcset="images/team3.jpeg 1x, images/team3.jpeg 2x"
-                                alt="Juliana Costa">
+                                alt="Giovane">
                         </figure>
                     </div>
 
@@ -1534,44 +1782,62 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Mostrar primeiro perfil inicialmente
                 showProfile(0);
             });
-        </script> <!-- # menu
+        </script>
+        <section id="localização" class="container s-location target-section">
+            <div class="row s-location__content">
+
+                <div class="column xl-4 lg-5 md-12 s-location__content-start">
+                    <div class="section-header" data-num="06">
+                        <h2 class="text-display-title">Localização</h2>
+                    </div>
+
+                    <div class="location-info">
+                        <h3 class="text-h3-center">Venha nos Visitar</h3>
+                        <a href="#" class="btn btn--primary">Agendar Horário</a>
+
+                        <div class="location-details">
+                            <!-- Você pode adicionar endereço, telefone, horários aqui -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column xl-8 lg-7 md-12 s-location__content-end">
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.556562976969!2d-46.8571108!3d-23.4030371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf1d566f4abe21%3A0x227d1cb8d65d372!2sLa%20Beaut%C3%A9%20Studio%20%26%20Academy!5e0!3m2!1spt-BR!2sbr!4v1712345678901!5m2!1spt-BR!2sbr"
+                            width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Localização La Beauté Studio e Academy - Cajamar">
+                        </iframe>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <br>
         <!-- # footer 
         ================================================== -->
         <footer id="footer" class="container s-footer">
             <div class="row s-footer__main">
                 <div class="column xl-3 lg-12 footer-block s-footer__main-start">
-
-                    <div class="s-footer__logo">
-                        <a class="logo" href="index.html">
-                            <img src="images/logo.svg" alt="Homepage">
-                        </a>
-                    </div>
+                    <h6>Redes Sociais</h6>
 
                     <ul class="s-footer__social social-list">
                         <li>
-                            <a href="#0">
+                            <a href="https://www.facebook.com/almeidasara.nails" target="_blank"
+                                rel="noopener noreferrer">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:">
                                     <path
                                         d="M20,3H4C3.447,3,3,3.448,3,4v16c0,0.552,0.447,1,1,1h8.615v-6.96h-2.338v-2.725h2.338v-2c0-2.325,1.42-3.592,3.5-3.592 c0.699-0.002,1.399,0.034,2.095,0.107v2.42h-1.435c-1.128,0-1.348,0.538-1.348,1.325v1.735h2.697l-0.35,2.725h-2.348V21H20 c0.553,0,1-0.448,1-1V4C21,3.448,20.553,3,20,3z">
                                     </path>
                                 </svg>
-                                <span class="u-screen-reader-text">Facebook</span>
+                                <span>Facebook</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#0">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;">
-                                    <path
-                                        d="m20.665 3.717-17.73 6.837c-1.21.486-1.203 1.161-.222 1.462l4.552 1.42 10.532-6.645c.498-.303.953-.14.579.192l-8.533 7.701h-.002l.002.001-.314 4.692c.46 0 .663-.211.921-.46l2.211-2.15 4.599 3.397c.848.467 1.457.227 1.668-.785l3.019-14.228c.309-1.239-.473-1.8-1.282-1.434z">
-                                    </path>
-                                </svg>
-                                <span class="u-screen-reader-text">Telegram</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#0">
+                            <a href="https://www.instagram.com/nailstudio_labeaute/" target="_blank"
+                                rel="noopener noreferrer">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:">
                                     <path
@@ -1582,78 +1848,55 @@ document.addEventListener('DOMContentLoaded', function() {
                                         d="M20.533,6.111c-0.469-1.209-1.424-2.165-2.633-2.632c-0.699-0.263-1.438-0.404-2.186-0.42 c-0.963-0.042-1.268-0.054-3.71-0.054s-2.755,0-3.71,0.054C7.548,3.074,6.809,3.215,6.11,3.479C4.9,3.946,3.945,4.902,3.477,6.111 c-0.263,0.7-0.404,1.438-0.419,2.186c-0.043,0.962-0.056,1.267-0.056,3.71c0,2.442,0,2.753,0.056,3.71 c0.015,0.748,0.156,1.486,0.419,2.187c0.469,1.208,1.424,2.164,2.634,2.632c0.696,0.272,1.435,0.426,2.185,0.45 c0.963,0.042,1.268,0.055,3.71,0.055s2.755,0,3.71-0.055c0.747-0.015,1.486-0.157,2.186-0.419c1.209-0.469,2.164-1.424,2.633-2.633 c0.263-0.7,0.404-1.438,0.419-2.186c0.043-0.962,0.056-1.267,0.056-3.71s0-2.753-0.056-3.71C20.941,7.57,20.801,6.819,20.533,6.111z M19.315,15.643c-0.007,0.576-0.111,1.147-0.311,1.688c-0.305,0.787-0.926,1.409-1.712,1.711c-0.535,0.199-1.099,0.303-1.67,0.311 c-0.95,0.044-1.218,0.055-3.654,0.055c-2.438,0-2.687,0-3.655-0.055c-0.569-0.007-1.135-0.112-1.669-0.311 c-0.789-0.301-1.414-0.923-1.719-1.711c-0.196-0.534-0.302-1.099-0.311-1.669c-0.043-0.95-0.053-1.218-0.053-3.654 c0-2.437,0-2.686,0.053-3.655c0.007-0.576,0.111-1.146,0.311-1.687c0.305-0.789,0.93-1.41,1.719-1.712 c0.534-0.198,1.1-0.303,1.669-0.311c0.951-0.043,1.218-0.055,3.655-0.055c2.437,0,2.687,0,3.654,0.055 c0.571,0.007,1.135,0.112,1.67,0.311c0.786,0.303,1.407,0.925,1.712,1.712c0.196,0.534,0.302,1.099,0.311,1.669 c0.043,0.951,0.054,1.218,0.054,3.655c0,2.436,0,2.698-0.043,3.654H19.315z">
                                     </path>
                                 </svg>
-                                <span class="u-screen-reader-text">Instagram</span>
+                                <span>Instagram</span>
                             </a>
                         </li>
-                        <li>
-                            <a href="#0">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;">
-                                    <path
-                                        d="M8.31 10.28a2.5 2.5 0 1 0 2.5 2.49 2.5 2.5 0 0 0-2.5-2.49zm0 3.8a1.31 1.31 0 1 1 0-2.61 1.31 1.31 0 1 1 0 2.61zm7.38-3.8a2.5 2.5 0 1 0 2.5 2.49 2.5 2.5 0 0 0-2.5-2.49zM17 12.77a1.31 1.31 0 1 1-1.31-1.3 1.31 1.31 0 0 1 1.31 1.3z">
-                                    </path>
-                                    <path
-                                        d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm7.38 10.77a3.69 3.69 0 0 1-6.2 2.71L12 16.77l-1.18-1.29a3.69 3.69 0 1 1-5-5.44l-1.2-1.3H7.3a8.33 8.33 0 0 1 9.41 0h2.67l-1.2 1.31a3.71 3.71 0 0 1 1.2 2.72z">
-                                    </path>
-                                    <path
-                                        d="M14.77 9.05a7.19 7.19 0 0 0-5.54 0A4.06 4.06 0 0 1 12 12.7a4.08 4.08 0 0 1 2.77-3.65z">
-                                    </path>
-                                </svg>
-                                <span class="u-screen-reader-text">Tripadvisor</span>
-                            </a>
-                        </li>
-                    </ul> <!--end s-footer__social -->
-
+                    </ul> <!-- end s-footer__social -->
                 </div> <!-- end s-footer__main-start -->
 
-
                 <div class="column xl-9 lg-12 s-footer__main-end grid-cols grid-cols--wrap">
-
                     <div class="grid-cols__column footer-block">
-                        <h6>Location</h6>
+                        <h6>Localização</h6>
                         <p>
-                            456 Elm Street, Los Angeles <br>
-                            CA 90001
+                            Rua dos Eucaliptos, Nº19
+                        <p> Portal dos Ipês</p>
                         </p>
                     </div>
 
                     <div class="grid-cols__column footer-block">
-                        <h6>Contacts</h6>
+                        <h6>Contatos</h6>
                         <ul class="link-list">
-                            <li><a href="mailto:#0">contact@lounge.com</a></li>
-                            <li><a href="tel:+2135551212">(213) 555-123-3456</a></li>
+                            <li><a href="mailto:labeautestudioacademy@gmail.com">labeautestudioacademy@gmail.com</a>
+                            </li>
+                            <li><a href="tel:+55 11 93342-7537">11 93342-7537</a></li>
                         </ul>
                     </div>
 
                     <div class="grid-cols__column footer-block">
-                        <h6>Opening Hours</h6>
+                        <h6>Horarios de Atendimento</h6>
                         <ul class="opening-hours">
-                            <li><span class="opening-hours__days">Weekdays</span><span
-                                    class="opening-hours__time">10:00am - 9:00pm</span></li>
-                            <li><span class="opening-hours__days">Weekends</span><span
-                                    class="opening-hours__time">9:00am - 10:00pm</span></li>
+                            <li><span class="opening-hours__days">Terça à Sexta</span><span
+                                    class="opening-hours__time">08h00 -
+                                    19h00</span></li>
+                            <li><span class="opening-hours__days">Sábado</span><span class="opening-hours__time">07h00 -
+                                    14h00</span></li>
                         </ul>
                     </div>
-
-                </div> <!-- s-footer__main-end -->
-
-            </div> <!-- end  s-footer__main-content -->
+                </div> <!-- end s-footer__main-end -->
+            </div> <!-- end s-footer__main -->
 
             <div class="row s-footer__bottom">
-
                 <div class="column xl-6 lg-12">
                     <p class="ss-copyright">
-                        <span>© Lounge 2025</span>
-                        <span>Design by <a href="https://styleshout.com/">StyleShout</a></span>
-
-                        Distributed by <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
+                        <span>© SolutionsTechIO 2025</span>
+                        <span>Desenvolvido por <a href="https://www.instagram.com/solutionstechio_/"
+                                target="_blank">SolutionsTech IO</a></span>
                     </p>
                 </div>
-
             </div> <!-- end s-footer__bottom -->
 
             <div class="ss-go-top">
-                <a class="smoothscroll" title="Back to Top" href="#top">
+                <a class="smoothscroll" title="Voltar ao Topo" href="#top">
                     <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"
                         viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -1661,11 +1904,9 @@ document.addEventListener('DOMContentLoaded', function() {
                             fill-rule="nonzero" />
                     </svg>
                 </a>
-                <span>Back To Top</span>
+                <span>Subir</span>
             </div> <!-- end ss-go-top -->
-
         </footer> <!-- end s-footer -->
-
     </div> <!-- end page-wrap -->
 
 
