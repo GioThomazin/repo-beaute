@@ -147,7 +147,7 @@
    * (https://maketintsandshades.com/)
    */
     --color-neutral-50            : #efefef;
-    --color-neutral-100           : #dfe0e0;
+    --color-neutral-100           : #C6A664;
     --color-neutral-150           : #cfd0d0;
     --color-neutral-200           : #C6A664;
     --color-neutral-250           : #C6A664;
@@ -163,7 +163,7 @@
     --color-neutral-750           : #303231;
     --color-neutral-800           : #262827;
     --color-neutral-850           : #1c1e1d;
-    --color-neutral-900           : #C6A664;
+    --color-neutral-900           : #ffffff;
     --color-neutral-950           : #090a0a;
     --color-neutral               : var(--color-neutral-500);
 
@@ -4181,7 +4181,7 @@ background-color: #ffffff;
     display       : flex;
     align-items   : center;
     height        : 100%;
-            background-color: #000;
+            background-color: #1E1E8C;
     padding-top   : var(--vspace-0_75);
     padding-bottom: var(--vspace-0_75);
     padding-left  : var(--vspace-0_75);
