@@ -168,18 +168,22 @@
 
                             <form id="schedule-form" class="schedule-form">
                                 <div class="form-group">
+                                    Nome
                                     <input type="text" id="client-name" name="name" placeholder="Seu Nome Completo"
                                         required>
                                 </div>
                                 <div class="form-group">
+                                    Data
                                     <input type="date" id="preferred-date" name="date" required>
                                 </div>
 
                                 <div class="form-group">
+                                    Horário
                                     <input type="time" id="preferred-time" name="time" required>
                                 </div>
 
                                 <div class="form-group">
+                                    Serviço
                                     <select id="service-type" name="service" required>
                                         <option value="" disabled selected>Selecione o Serviço</option>
                                         <option value="Alongamento">Alongamento</option>
@@ -330,10 +334,13 @@
             /* Tab Content */
             .tab-content__item {
                 display: none;
+                opacity: 0;
+                transition: opacity 0.3s ease;
             }
 
             .tab-content__item.active {
                 display: block;
+                opacity: 1;
             }
 
             /* Active Tab Indicator */
@@ -352,7 +359,7 @@
                 color: #555;
             }
         </style>
-<br>
+        <br>
         <section id="menu" class="container s-menu target-section">
 
             <div class="row s-menu__content">
@@ -369,7 +376,7 @@
                                 <a href="#tab-alongamento">
                                     <span>Alongamento</span>
                                     <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round"
-                                        stroke-miterlimit="1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="m14.523 18.787s4.501-4.505 6.255-6.26c.146-.146.219-.338.219-.53s-.073-.383-.219-.53c-1.753-1.754-6.255-6.258-6.255-6.258-.144-.145-.334-.217-.524-.217-.193 0-.385.074-.532.221-.293.292-.295.766-.004 1.056l4.978 4.978h-14.692c-.414 0-.75.336-.75.75s.336.75.75.75h14.692l-4.979 4.979c-.289.289-.286.762.006 1.054.148.148.341.222.533.222.19 0 .378-.072.522-.215z"
                                             fill-rule="nonzero" />
@@ -846,7 +853,8 @@
                 });
             });
         </script>
-<br>
+        <br>
+
         <section id="gallery" class="container s-gallery target-section">
             <div class="row s-gallery__header">
                 <div class="column xl-12 section-header-wrap">
@@ -860,9 +868,10 @@
 
                 <div class="gallery-items__item grid-cols__column">
                     <figure>
-                        <a href="images/gallery/large/l-gallery-01.jpeg" class="gallery-items__item-thumb glightbox">
+                        <a href="images/gallery/gallery-01.jpeg" class="gallery-items__item-thumb glightbox sem-clique">
                             <img src="images/gallery/gallery-01.jpeg"
-                                srcset="images/gallery/gallery-01.jpeg 1x, images/gallery/gallery-01@2x.jpeg 1x" alt="">
+                                srcset="images/gallery/gallery-01.jpeg 1x, images/gallery/gallery-01.jpeg@2x.jpeg 2x"
+                                alt="">
                         </a>
                         <figcaption class="gallery-caption">Alongamento</figcaption>
                     </figure>
@@ -870,7 +879,8 @@
 
                 <div class="gallery-items__item grid-cols__column">
                     <figure>
-                        <a href="images/gallery/large/l-gallery-02.jpeg" class="gallery-items__item-thumb glightbox">
+                        <a href="images/gallery/large/l-gallery-02.jpeg"
+                            class="gallery-items__item-thumb glightbox sem-clique">
                             <img src="images/gallery/gallery-02.jpeg"
                                 srcset="images/gallery/gallery-02.jpeg 1x, images/gallery/gallery-02@2x.jpeg 2x" alt="">
                         </a>
@@ -880,7 +890,8 @@
 
                 <div class="gallery-items__item grid-cols__column">
                     <figure>
-                        <a href="images/gallery/large/l-gallery-03.jpeg" class="gallery-items__item-thumb glightbox">
+                        <a href="images/gallery/large/l-gallery-03.jpeg"
+                            class="gallery-items__item-thumb glightbox sem-clique">
                             <img src="images/gallery/gallery-03.jpeg"
                                 srcset="images/gallery/gallery-03.jpeg 1x, images/gallery/gallery-03@2x.jpeg 2x" alt="">
                         </a>
@@ -890,7 +901,8 @@
 
                 <div class="gallery-items__item grid-cols__column">
                     <figure>
-                        <a href="images/gallery/large/l-gallery-04.jpeg" class="gallery-items__item-thumb glightbox">
+                        <a href="images/gallery/large/l-gallery-04.jpeg"
+                            class="gallery-items__item-thumb glightbox sem-clique">
                             <img src="images/gallery/gallery-04.jpeg"
                                 srcset="images/gallery/gallery-04.jpeg 1x, images/gallery/gallery-04@2x.jpeg 2x" alt="">
                         </a>
@@ -900,7 +912,8 @@
 
                 <div class="gallery-items__item grid-cols__column">
                     <figure>
-                        <a href="images/gallery/large/l-gallery-05.jpeg" class="gallery-items__item-thumb glightbox">
+                        <a href="images/gallery/large/l-gallery-05.jpeg"
+                            class="gallery-items__item-thumb glightbox sem-clique">
                             <img src="images/gallery/gallery-05.jpeg"
                                 srcset="images/gallery/gallery-05.jpeg 1x, images/gallery/gallery-05@2x.jpeg 2x" alt="">
                         </a>
@@ -910,7 +923,8 @@
 
                 <div class="gallery-items__item grid-cols__column">
                     <figure>
-                        <a href="images/gallery/large/l-gallery-06.jpeg" class="gallery-items__item-thumb glightbox">
+                        <a href="images/gallery/large/l-gallery-06.jpeg"
+                            class="gallery-items__item-thumb glightbox sem-clique">
                             <img src="images/gallery/gallery-06.jpeg"
                                 srcset="images/gallery/gallery-06.jpeg 1x, images/gallery/gallery-06@2x.jpeg 2x" alt="">
                         </a>
@@ -920,7 +934,8 @@
 
                 <div class="gallery-items__item grid-cols__column">
                     <figure>
-                        <a href="images/gallery/large/l-gallery-07.jpeg" class="gallery-items__item-thumb glightbox">
+                        <a href="images/gallery/large/l-gallery-07.jpeg"
+                            class="gallery-items__item-thumb glightbox sem-clique">
                             <img src="images/gallery/gallery-07.jpg"
                                 srcset="images/gallery/gallery-07.jpeg 1x, images/gallery/gallery-07@2x.jpeg 2x" alt="">
                         </a>
@@ -930,7 +945,8 @@
 
                 <div class="gallery-items__item grid-cols__column">
                     <figure>
-                        <a href="images/gallery/large/l-gallery-08.jpeg" class="gallery-items__item-thumb glightbox">
+                        <a href="images/gallery/large/l-gallery-08.jpeg"
+                            class="gallery-items__item-thumb glightbox sem-clique">
                             <img src="images/gallery/gallery-08.jpeg"
                                 srcset="images/gallery/gallery-08.jpeg 1x, images/gallery/gallery-08@2x.jpeg 2x" alt="">
                         </a>
@@ -939,8 +955,8 @@
                 </div>
 
             </div> <!-- end gallery-items -->
-
         </section> <!-- end s-gallery -->
+
         <!-- # testimonials
         ================================================== -->
         <style>
@@ -1246,10 +1262,11 @@
                     background-color: #f0f0f0;
                 }
         </style><br>
-     <section id="cursos" class="container s-gallery target-section">
+
+        <section id="cursos" class="container s-gallery target-section">
             <div class="row s-gallery__header">
                 <div class="column xl-12 section-header-wrap">
-                    <div class="section-header" data-num="04">
+                    <div class="" data-num="">
                         <h2 class="text-display-title">Cursos</h2>
                     </div>
                 </div>
@@ -1277,7 +1294,7 @@
                         <div class="preco">R$ 590,00</div>
                         <div class="economia">Economize R$ 200,00</div>
                         <br>
-                        <a href="#" class="btn">CONTRATAR</a>
+                        <a href="CursoManicureModerna.html" class="btn">Saber Mais</a>
                     </div>
 
                     <!-- Curso 2 (Destaque) -->
@@ -1299,7 +1316,7 @@
                             <div class="preco">R$ 590,00</div>
                             <div class="economia">Economize R$ 200,00</div>
                             <br>
-                            <a href="#" class="btn">CONTRATAR</a>
+                            <a href="CursoFibraDeVidro.html" class="btn">Saber Mais</a>
 
                         </div>
                     </div>
@@ -1324,7 +1341,7 @@
                         <div class="preco-original">R$ 1.500,00</div>
                         <div class="preco">R$ 1.200,00</div>
                         <div class="economia">Economize R$ 300,00</div>
-                        <a href="#" class="btn">CONTRATAR</a>
+                        <a href="ComboNailDesigner.html" class="btn">CONTRATAR</a>
                     </div>
                 </div>
             </div>

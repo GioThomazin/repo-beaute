@@ -1,7 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>La Beauté Studio & Academy</title>
+
+    <script>
+        document.documentElement.classList.remove('no-js');
+        document.documentElement.classList.add('js');
+    </script>
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="android-chrome-512x2.png">
+
+
+    <link rel="manifest" href="site.webmanifest">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curso de Manicure Moderna - Esmaltação em Gel</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -16,16 +46,16 @@
             --dark-gray: #333333;
             --medium-gray: #666666;
         }
-        
+
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: "Roboto Flex", Sans-Serif;
             line-height: 1.6;
             color: var(--dark-gray);
             background-color: #f5f5f5;
             margin: 0;
             padding: 0;
         }
-        
+
         .curso-header {
             background: linear-gradient(135deg, var(--blue) 0%, #000033 100%);
             color: var(--white);
@@ -34,7 +64,7 @@
             position: relative;
             overflow: hidden;
         }
-        
+
         .curso-header::before {
             content: "";
             position: absolute;
@@ -46,22 +76,22 @@
             background-size: cover;
             opacity: 0.3;
         }
-        
+
         .curso-header h1 {
-            font-size: 2.8rem;
+            font-size: var(--type-size-h2);
             margin-bottom: 15px;
             position: relative;
             z-index: 2;
         }
-        
+
         .curso-header h1 span {
             color: var(--gold);
             display: block;
             font-weight: 300;
-            font-size: 2.2rem;
+            font-size: var(--type-size-h2);
             margin-top: 10px;
         }
-        
+
         .curso-header .subtitle {
             font-size: 1.4rem;
             font-weight: 300;
@@ -71,7 +101,7 @@
             z-index: 2;
             color: var(--gold-light);
         }
-        
+
         .curso-container {
             max-width: 1200px;
             margin: 0 auto;
@@ -80,17 +110,17 @@
             flex-wrap: wrap;
             gap: 30px;
         }
-        
+
         .curso-main {
             flex: 3;
             min-width: 300px;
         }
-        
+
         .curso-sidebar {
             flex: 1;
             min-width: 300px;
         }
-        
+
         .section {
             background: var(--white);
             border-radius: 12px;
@@ -98,7 +128,7 @@
             padding: 30px;
             margin-bottom: 30px;
         }
-        
+
         .section-title {
             color: var(--blue);
             font-size: 1.8rem;
@@ -108,7 +138,7 @@
             border-bottom: 2px solid var(--gold);
             position: relative;
         }
-        
+
         .section-title::after {
             content: "";
             position: absolute;
@@ -118,19 +148,19 @@
             height: 2px;
             background: var(--gold);
         }
-        
+
         .lista-beneficios {
             list-style: none;
             padding: 0;
             margin: 0;
         }
-        
+
         .lista-beneficios li {
             margin-bottom: 15px;
             padding-left: 30px;
             position: relative;
         }
-        
+
         .lista-beneficios li::before {
             content: "\f00c";
             font-family: "Font Awesome 6 Free";
@@ -140,18 +170,18 @@
             top: 2px;
             color: var(--gold);
         }
-        
+
         .lista-beneficios strong {
             color: var(--blue);
             font-weight: 600;
         }
-        
+
         .feature-box {
             display: flex;
             align-items: flex-start;
             margin-bottom: 25px;
         }
-        
+
         .feature-icon {
             background: var(--gold);
             color: var(--white);
@@ -165,17 +195,17 @@
             flex-shrink: 0;
             margin-right: 20px;
         }
-        
+
         .feature-content {
             flex: 1;
         }
-        
+
         .feature-content h3 {
             margin-top: 0;
             margin-bottom: 10px;
             color: var(--blue);
         }
-        
+
         .pricing-box {
             background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);
             color: var(--white);
@@ -184,23 +214,23 @@
             text-align: center;
             box-shadow: 0 10px 30px rgba(198, 166, 100, 0.3);
         }
-        
+
         .pricing-box h2 {
             margin-top: 0;
-            font-size: 2.2rem;
+            font-size: var(--type-size-h2);
             margin-bottom: 15px;
         }
-        
+
         .price {
             font-size: 3.5rem;
             font-weight: 700;
             margin: 20px 0;
         }
-        
+
         .pricing-details {
             margin-bottom: 25px;
         }
-        
+
         .btn-enroll {
             display: inline-block;
             background: var(--blue);
@@ -213,13 +243,13 @@
             transition: all 0.3s ease;
             box-shadow: 0 5px 15px rgba(30, 30, 140, 0.4);
         }
-        
+
         .btn-enroll:hover {
             background: #0f0f5e;
             transform: translateY(-3px);
             box-shadow: 0 8px 20px rgba(30, 30, 140, 0.6);
         }
-        
+
         .testimonial {
             background: var(--light-gray);
             border-left: 4px solid var(--gold);
@@ -228,19 +258,19 @@
             border-radius: 0 8px 8px 0;
             font-style: italic;
         }
-        
+
         .testimonial p {
             margin: 0;
             color: var(--medium-gray);
         }
-        
+
         .benefit-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 20px;
             margin-top: 25px;
         }
-        
+
         .benefit-card {
             background: var(--light-gray);
             padding: 20px;
@@ -248,23 +278,23 @@
             text-align: center;
             transition: all 0.3s ease;
         }
-        
+
         .benefit-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
         }
-        
+
         .benefit-card i {
             font-size: 2.5rem;
             color: var(--gold);
             margin-bottom: 15px;
         }
-        
+
         .benefit-card h3 {
             margin: 0 0 10px;
             color: var(--blue);
         }
-        
+
         .cta-section {
             background: linear-gradient(135deg, var(--blue) 0%, #000033 100%);
             color: var(--white);
@@ -272,19 +302,19 @@
             padding: 80px 20px;
             margin-top: 50px;
         }
-        
+
         .cta-section h2 {
             font-size: 2.5rem;
             margin-top: 0;
             margin-bottom: 20px;
         }
-        
+
         .cta-section p {
             font-size: 1.2rem;
             max-width: 800px;
             margin: 0 auto 30px;
         }
-        
+
         .destaque {
             color: var(--gold);
             font-weight: 600;
@@ -296,37 +326,40 @@
             background-color: rgba(198, 166, 100, 0.1);
             border-left: 4px solid var(--gold);
         }
-        
+
         @media (max-width: 768px) {
             .curso-container {
                 flex-direction: column;
             }
-            
+
             .curso-header h1 {
                 font-size: 2.2rem;
             }
-            
+
             .curso-header h1 span {
-                font-size: 1.8rem;
+                font-size: var(--type-size-h2);
             }
-            
+
             .price {
-                font-size: 2.8rem;
+                font-size: var(--type-size-h2);
             }
         }
     </style>
 </head>
+
 <body>
     <header class="curso-header">
+        <a href="#" class="btn btn--primary ">Inicio</a>
         <h1>MANICURE MODERNA <span>Esmaltação em Gel</span></h1>
         <p class="subtitle">(Teoria + Prática Profissional)</p>
+
     </header>
 
     <div class="curso-container">
         <main class="curso-main">
             <div class="section">
                 <h2 class="section-title">O que você vai aprender</h2>
-                
+
                 <div class="feature-box">
                     <div class="feature-icon">
                         <i class="fas fa-book"></i>
@@ -342,7 +375,7 @@
                         </ul>
                     </div>
                 </div>
-                
+
                 <div class="feature-box">
                     <div class="feature-icon">
                         <i class="fas fa-hand-paper"></i>
@@ -356,34 +389,35 @@
                             <li>Cutilagem combinada (opcional)</li>
                             <li>Remoção correta do gel sem agredir a unha natural</li>
                             <li>Programa de modelo real para prática supervisionada</li>
-                            <li>Orientações sobre como tirar boas fotos do seu trabalho para atrair mais clientes nas redes sociais</li>
+                            <li>Orientações sobre como tirar boas fotos do seu trabalho para atrair mais clientes nas
+                                redes sociais</li>
                         </ul>
                     </div>
                 </div>
             </div>
-            
+
             <div class="section">
                 <h2 class="section-title">Diferenciais do Curso</h2>
-                
+
                 <div class="benefit-grid">
                     <div class="benefit-card">
                         <i class="fas fa-star"></i>
                         <h3>Técnica Real</h3>
                         <p>Usada no dia a dia de atendimento em salão</p>
                     </div>
-                    
+
                     <div class="benefit-card">
                         <i class="fas fa-users"></i>
                         <h3>Para Todos os Níveis</h3>
                         <p>Iniciantes e profissionais que querem se atualizar</p>
                     </div>
-                    
+
                     <div class="benefit-card">
                         <i class="fas fa-briefcase"></i>
                         <h3>Mercado Atual</h3>
                         <p>Conteúdo voltado à realidade do mercado atual</p>
                     </div>
-                    
+
                     <div class="benefit-card">
                         <i class="fas fa-camera"></i>
                         <h3>Redes Sociais</h3>
@@ -391,51 +425,56 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="section">
                 <h2 class="section-title">Para quem é o curso?</h2>
-                
+
                 <ul class="lista-beneficios">
                     <li>Quem está começando e quer aprender com segurança e técnica</li>
                     <li>Manicures que desejam oferecer serviços modernos e com mais valor agregado</li>
                     <li>Profissionais que querem melhorar seus resultados e atendimento</li>
                 </ul>
             </div>
-            
+
             <div class="section">
                 <h2 class="section-title">Formato das Aulas</h2>
-                
+
                 <ul class="lista-beneficios">
                     <li>Aulas teóricas objetivas</li>
                     <li>Aulas práticas passo a passo</li>
                     <li>Dicas de apresentação profissional para redes sociais</li>
                 </ul>
-                
+
                 <div class="testimonial">
-                    <p>"Além de dominar a esmaltação em gel, você vai aprender como valorizar o seu trabalho e atrair mais clientes com técnicas profissionais e visual impecável."</p>
+                    <p>"Além de dominar a esmaltação em gel, você vai aprender como valorizar o seu trabalho e atrair
+                        mais clientes com técnicas profissionais e visual impecável."</p>
                 </div>
             </div>
         </main>
-        
+
         <aside class="curso-sidebar">
             <div class="section">
                 <div class="pricing-box">
-                    <h2>Investimento</h2>
+                    <h4>Investimento</h4>
                     <div class="price">R$ 700,00</div>
                     <div class="pricing-details">
                         <p><i class="fas fa-calendar-alt"></i> Curso com duração de 1 dia completo</p>
                         <p><i class="fas fa-credit-card"></i> Parcelamento em até 12x (com juros da máquina)</p>
                     </div>
-                    <a href="#" class="btn-enroll">QUERO ME INSCREVER</a>
+                    
+                  <a href="#" class="btn btn--primary">QUERO ME INSCREVER</a>
+
+
                 </div>
             </div>
-            
+
             <div class="section">
                 <h2 class="section-title">Resultado Esperado</h2>
-                <p>Você estará preparada para oferecer esmaltação em gel com acabamento impecável, maior durabilidade e um serviço profissional que fideliza clientes.</p>
+                <p>Você estará preparada para oferecer esmaltação em gel com acabamento impecável, maior durabilidade e
+                    um serviço profissional que fideliza clientes.</p>
                 <p class="destaque">Pronta para se destacar como manicure moderna?</p>
             </div>
-            
+
             <div class="section">
                 <h2 class="section-title">Formato do Curso</h2>
                 <ul class="lista-beneficios">
@@ -447,38 +486,40 @@
             </div>
         </aside>
     </div>
-    
+
     <div class="cta-section">
         <h2>Transforme sua paixão em profissão!</h2>
-        <p>Aprenda as técnicas mais modernas de esmaltação em gel com profissionais experientes e comece a oferecer serviços de alta qualidade que encantam suas clientes.</p>
-        <a href="#" class="btn-enroll">GARANTIR MINHA VAGA AGORA</a>
+        <p>Aprenda as técnicas mais modernas de esmaltação em gel com profissionais experientes e comece a oferecer
+            serviços de alta qualidade que encantam suas clientes.</p>
+        <a href="#" class="btn btn--primary">GARANTIR MINHA VAGA AGORA</a>
     </div>
 
     <script>
         // Animação suave ao rolar para elementos
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const animateOnScroll = () => {
                 const elements = document.querySelectorAll('.feature-box, .benefit-card');
                 elements.forEach(el => {
                     const position = el.getBoundingClientRect();
-                    if(position.top < window.innerHeight * 0.85) {
+                    if (position.top < window.innerHeight * 0.85) {
                         el.style.opacity = 1;
                         el.style.transform = 'translateY(0)';
                     }
                 });
             };
-            
+
             // Inicializar elementos com opacidade 0 para animação
             document.querySelectorAll('.feature-box, .benefit-card').forEach(el => {
                 el.style.opacity = 0;
                 el.style.transform = 'translateY(20px)';
                 el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
             });
-            
+
             // Animar ao carregar e ao rolar
             animateOnScroll();
             window.addEventListener('scroll', animateOnScroll);
         });
     </script>
 </body>
+
 </html>
